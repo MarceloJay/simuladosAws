@@ -32,20 +32,20 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="8dp"
-        android:paddingBottom="16dp">
+        android:paddingBottom="80dp">
 
         <Button
             android:id="@+id/btnBackToResult"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:minHeight="0dp"
+            android:layout_height="48dp"
+            android:minHeight="48dp"
             android:layout_gravity="end"
             android:text="Voltar"
             android:textColor="@android:color/white"
             android:background="@drawable/button_back_blue"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:textSize="14sp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:elevation="2dp" />
 

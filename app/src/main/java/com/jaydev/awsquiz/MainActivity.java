@@ -3,6 +3,8 @@ package com.jaydev.awsquiz;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -31,54 +33,36 @@ public class MainActivity extends AppCompatActivity {
         updateManager = new UpdateManager(this);
         updateManager.checkForUpdate(AppUpdateType.FLEXIBLE);
 
-        // create a custom action bar view with icon + centered title
+        // Configurar action bar
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayShowCustomEnabled(true);
-            getSupportActionBar().setDisplayShowTitleEnabled(false);
-
-            RelativeLayout container = new RelativeLayout(this);
-            container.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-            ImageView iv = new ImageView(this);
-            iv.setId(View.generateViewId());
-            iv.setImageResource(R.mipmap.ic_launcher_round);
-            int size = (int) (36 * getResources().getDisplayMetrics().density);
-            RelativeLayout.LayoutParams ivParams = new RelativeLayout.LayoutParams(size, size);
-            ivParams.addRule(RelativeLayout.ALIGN_PARENT_START);
-            ivParams.addRule(RelativeLayout.CENTER_VERTICAL);
-            ivParams.setMarginStart((int) (12 * getResources().getDisplayMetrics().density));
-            iv.setLayoutParams(ivParams);
-
-            // invisible spacer on the right to balance the left icon so the title centers correctly
-            View spacer = new View(this);
-            spacer.setId(View.generateViewId());
-            RelativeLayout.LayoutParams spacerParams = new RelativeLayout.LayoutParams(size, size);
-            spacerParams.addRule(RelativeLayout.ALIGN_PARENT_END);
-            spacerParams.addRule(RelativeLayout.CENTER_VERTICAL);
-            spacer.setLayoutParams(spacerParams);
-            spacer.setVisibility(View.INVISIBLE);
-
-            TextView title = new TextView(this);
-            title.setText(getString(R.string.app_name));
-            title.setTextSize(18);
-            title.setTextColor(getResources().getColor(android.R.color.white));
-            title.setGravity(Gravity.CENTER);
-            RelativeLayout.LayoutParams titleParams = new RelativeLayout.LayoutParams(
-                    RelativeLayout.LayoutParams.WRAP_CONTENT,
-                    RelativeLayout.LayoutParams.WRAP_CONTENT
-            );
-            titleParams.addRule(RelativeLayout.CENTER_IN_PARENT);
-            title.setLayoutParams(titleParams);
-
-            container.addView(iv);
-            container.addView(spacer);
-            container.addView(title);
-
-            getSupportActionBar().setCustomView(container);
+            getSupportActionBar().setTitle(R.string.app_name);
         }
 
         String[] options = new String[]{"5 questões", "10 questões", "20 questões", "30 questões", "65 questões"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, options);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, options) {
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                if (view instanceof TextView) {
+                    TextView tv = (TextView) view;
+                    tv.setTextColor(0xFF111111); // Preto
+                    tv.setTextSize(13);
+                }
+                return view;
+            }
+            
+            @Override
+            public View getDropDownView(int position, View convertView, ViewGroup parent) {
+                View view = super.getDropDownView(position, convertView, parent);
+                if (view instanceof TextView) {
+                    TextView tv = (TextView) view;
+                    tv.setTextColor(0xFF111111); // Preto
+                    tv.setBackgroundColor(0xFFFFFFFF); // Branco
+                    tv.setPadding(14, 14, 14, 14);
+                }
+                return view;
+            }
+        };
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         // Configure card titles
@@ -367,6 +351,22 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             });
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_about) {
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

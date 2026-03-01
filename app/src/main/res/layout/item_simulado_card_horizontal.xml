@@ -6,13 +6,13 @@
     android:layout_marginBottom="12dp"
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
+    app:cardBackgroundColor="#FFFFFF"
     android:foreground="?android:attr/selectableItemBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#FFFFFF"
         android:padding="12dp"
         android:gravity="center_vertical"
         android:minHeight="80dp">
@@ -68,11 +68,13 @@
                 android:layout_height="40dp"
                 android:minHeight="40dp"
                 android:background="@drawable/button_border"
-                android:paddingStart="12dp"
-                android:paddingEnd="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
                 android:layout_marginTop="6dp"
                 android:prompt="@string/selecione_quantidade_questoes"
-                android:spinnerMode="dropdown" />
+                android:spinnerMode="dropdown"
+                android:popupBackground="@android:color/white"
+                style="@style/SpinnerStyle" />
 
         </LinearLayout>
 

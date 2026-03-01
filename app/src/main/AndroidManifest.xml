@@ -28,6 +28,8 @@
         <activity android:name=".QuizActivity"/>
         <activity android:name=".ResultActivity"/>
         <activity android:name=".ReviewActivity"/>
+        <activity android:name=".AboutActivity"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 </manifest>

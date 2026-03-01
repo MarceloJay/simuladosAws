@@ -1,6 +1,7 @@
 package com.jaydev.awsquiz;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
@@ -30,6 +31,10 @@ public class ReviewActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         btnBackToResult = findViewById(R.id.btnBackToResult);
+        
+        // Forçar cor azul no botão (funciona em modo dark)
+        btnBackToResult.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#FF2D6CDF")));
+        
         btnBackToResult.setOnClickListener(v -> finish());
 
         try {
