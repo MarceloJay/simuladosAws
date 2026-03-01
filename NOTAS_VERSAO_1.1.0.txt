@@ -1,0 +1,46 @@
+📱 AWS Quiz - Versão 1.1.0 (Build 7)
+
+🎉 NOVIDADES DESTA VERSÃO:
+
+✨ 10 Simulados Completos
+• Agora com 10 simulados completos (antes eram apenas 3)
+• Total de 650 questões disponíveis
+• Cada simulado com 65 questões do exame AWS Cloud Practitioner
+
+📊 Sistema de Acompanhamento
+• Visualize sua porcentagem de acertos em cada simulado
+• Cores indicativas de desempenho:
+  - Verde: ≥70% (aprovado!)
+  - Laranja: 50-69% (quase lá!)
+  - Vermelho: <50% (precisa estudar mais)
+
+🎨 Interface Renovada
+• Novo design dos cards de simulados
+• Logo AWS Cloud Practitioner em cada card
+• Botão play circular mais intuitivo
+• Dropdown de seleção de questões melhorado
+
+🔄 Melhorias Gerais
+• Tela de revisão com botão voltar
+• Performance otimizada
+• Correções de bugs
+
+---
+
+PARA O GOOGLE PLAY (versão curta em português):
+
+Novidades:
+• 10 simulados completos (650 questões!)
+• Sistema de acompanhamento de desempenho
+• Interface renovada e mais intuitiva
+• Melhorias de performance
+
+---
+
+PARA O GOOGLE PLAY (versão curta em inglês):
+
+What's New:
+• 10 complete practice exams (650 questions!)
+• Performance tracking system
+• Redesigned and more intuitive interface
+• Performance improvements
