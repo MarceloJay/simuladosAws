@@ -368,7 +368,6 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
-}
 
     @Override
     protected void onResume() {
@@ -387,3 +386,4 @@ public class MainActivity extends AppCompatActivity {
             updateManager.cleanup();
         }
     }
+}
