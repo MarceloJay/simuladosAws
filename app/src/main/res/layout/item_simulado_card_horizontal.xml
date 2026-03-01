@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:minHeight="80dp">
+
+        <!-- Logo do Cloud Practitioner -->
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cloud_practitioner_logo"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="12dp"
+            android:contentDescription="@string/aws_cloud_practitioner_logo" />
+
+        <!-- Conteúdo do card -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/txtSimuladoTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/simulado_01"
+                    android:textSize="15sp"
+                    android:textColor="#111111"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPercentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="13sp"
+                    android:textColor="#27AE60"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinnerCount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:minHeight="40dp"
+                android:background="@drawable/button_border"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="6dp"
+                android:prompt="@string/selecione_quantidade_questoes"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <!-- Botão Iniciar com ícone play -->
+        <ImageButton
+            android:id="@+id/btnStartSim"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_play"
+            android:background="@drawable/bg_button_play_circle"
+            android:scaleType="fitCenter"
+            android:contentDescription="Iniciar simulado"
+            android:tint="#FFFFFF" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

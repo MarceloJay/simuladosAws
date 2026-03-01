@@ -2,6 +2,7 @@ package com.jaydev.awsquiz;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ public class ResultActivity extends AppCompatActivity {
         int total = getIntent().getIntExtra("TOTAL", 0);
         int answered = getIntent().getIntExtra("ANSWERED", -1);
         long elapsed = getIntent().getLongExtra("ELAPSED_MS", 0L);
+        String simuladoAsset = getIntent().getStringExtra("SIMULADO_ASSET");
 
         TextView resultText = findViewById(R.id.txtResult);
         TextView pctText = findViewById(R.id.txtPercentage);
@@ -27,6 +29,14 @@ public class ResultActivity extends AppCompatActivity {
         int percent = total > 0 ? (score * 100 / total) : 0;
         resultText.setText("Você acertou " + score + " de " + total + " questões.");
         pctText.setText("Sua pontuação: " + percent + "%");
+
+        // Save percentage to SharedPreferences
+        if (simuladoAsset != null && !simuladoAsset.isEmpty()) {
+            SharedPreferences prefs = getSharedPreferences("SimuladoResults", MODE_PRIVATE);
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putInt(simuladoAsset, percent);
+            editor.apply();
+        }
 
         if (answered >= 0) {
             elapsedText.setText("Respondidas: " + answered + "  •  Tempo: " + formatElapsed(elapsed));

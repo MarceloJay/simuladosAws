@@ -123,5 +123,320 @@
       "Usar apenas instâncias On-Demand"
     ],
     "correctAnswers": [1]
+  },
+  {
+    "question": "21/65 - Qual serviço AWS fornece um data warehouse escalável para análise de grandes volumes de dados?",
+    "options": ["Amazon RDS", "Amazon Redshift", "Amazon DynamoDB", "Amazon Aurora"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "22/65 - Qual serviço permite executar código em resposta a eventos HTTP sem provisionar servidores?",
+    "options": ["Amazon EC2", "AWS Lambda", "Amazon ECS", "AWS Fargate"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "23/65 - O que é Amazon VPC?",
+    "options": [
+      "Um serviço de banco de dados",
+      "Uma rede virtual isolada na nuvem AWS",
+      "Um serviço de armazenamento",
+      "Um serviço de monitoramento"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "24/65 - Qual serviço AWS é usado para enviar notificações push, SMS e email?",
+    "options": ["Amazon SQS", "Amazon SNS", "Amazon SES", "AWS Step Functions"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "25/65 - Qual tipo de instância EC2 oferece desconto significativo em troca de compromisso de 1 ou 3 anos?",
+    "options": ["On-Demand", "Spot", "Reserved", "Dedicated"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "26/65 - Qual serviço AWS fornece análise de segurança automatizada de aplicações?",
+    "options": ["AWS Shield", "Amazon Inspector", "AWS WAF", "Amazon GuardDuty"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "27/65 - O que é AWS CloudFormation?",
+    "options": [
+      "Serviço de monitoramento",
+      "Serviço de infraestrutura como código (IaC)",
+      "Serviço de banco de dados",
+      "Serviço de rede"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "28/65 - Qual serviço fornece detecção de ameaças inteligente usando machine learning?",
+    "options": ["AWS WAF", "Amazon GuardDuty", "AWS Shield", "Amazon Inspector"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "29/65 - Qual é o limite padrão de VPCs por região?",
+    "options": ["1", "5", "10", "Ilimitado"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "30/65 - Qual serviço AWS é usado para orquestração de containers?",
+    "options": ["Amazon ECS", "Amazon S3", "Amazon RDS", "AWS Lambda"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "31/65 - O que é Amazon ElastiCache?",
+    "options": [
+      "Serviço de cache em memória",
+      "Serviço de armazenamento em disco",
+      "Serviço de banco de dados relacional",
+      "Serviço de CDN"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "32/65 - Qual serviço AWS permite criar APIs RESTful e WebSocket?",
+    "options": ["AWS Lambda", "Amazon API Gateway", "Amazon CloudFront", "AWS AppSync"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "33/65 - Qual é a durabilidade do Amazon S3 Standard?",
+    "options": ["99.9%", "99.99%", "99.999999999% (11 noves)", "100%"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "34/65 - Qual serviço AWS fornece streaming de dados em tempo real?",
+    "options": ["Amazon SQS", "Amazon Kinesis", "Amazon SNS", "AWS Step Functions"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "35/65 - O que é AWS Organizations?",
+    "options": [
+      "Serviço de gerenciamento de múltiplas contas AWS",
+      "Serviço de banco de dados",
+      "Serviço de rede",
+      "Serviço de monitoramento"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "36/65 - Qual serviço permite transferir grandes volumes de dados para AWS usando dispositivos físicos?",
+    "options": ["AWS DataSync", "AWS Snow Family", "AWS Direct Connect", "AWS Transfer Family"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "37/65 - Qual serviço AWS fornece desktop virtual na nuvem?",
+    "options": ["Amazon WorkSpaces", "Amazon EC2", "AWS AppStream", "Amazon Lightsail"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "38/65 - O que é Amazon Aurora?",
+    "options": [
+      "Banco de dados NoSQL",
+      "Banco de dados relacional compatível com MySQL e PostgreSQL",
+      "Serviço de cache",
+      "Data warehouse"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "39/65 - Qual serviço AWS é usado para análise de logs e métricas?",
+    "options": ["AWS CloudTrail", "Amazon CloudWatch Logs", "AWS Config", "Amazon Inspector"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "40/65 - O que é AWS Elastic Beanstalk?",
+    "options": [
+      "Serviço de banco de dados",
+      "Plataforma como serviço (PaaS) para deploy de aplicações",
+      "Serviço de armazenamento",
+      "Serviço de rede"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "41/65 - Qual serviço fornece tradução automática de texto?",
+    "options": ["Amazon Comprehend", "Amazon Translate", "Amazon Polly", "Amazon Transcribe"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "42/65 - O que é Amazon EFS?",
+    "options": [
+      "Armazenamento de objetos",
+      "Armazenamento de blocos",
+      "Sistema de arquivos elástico compartilhado",
+      "Data warehouse"
+    ],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "43/65 - Qual serviço AWS fornece análise de sentimentos em texto?",
+    "options": ["Amazon Comprehend", "Amazon Translate", "Amazon Polly", "Amazon Lex"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "44/65 - O que é AWS Step Functions?",
+    "options": [
+      "Serviço de orquestração de workflows",
+      "Serviço de banco de dados",
+      "Serviço de rede",
+      "Serviço de armazenamento"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "45/65 - Qual serviço converte fala em texto?",
+    "options": ["Amazon Polly", "Amazon Transcribe", "Amazon Translate", "Amazon Lex"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "46/65 - O que é Amazon Athena?",
+    "options": [
+      "Banco de dados NoSQL",
+      "Serviço de consulta SQL em dados do S3",
+      "Data warehouse",
+      "Serviço de cache"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "47/65 - Qual serviço AWS fornece análise de custos e recomendações de otimização?",
+    "options": ["AWS Budgets", "AWS Cost Explorer", "AWS Trusted Advisor", "AWS Pricing Calculator"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "48/65 - O que é Amazon EMR?",
+    "options": [
+      "Serviço de email",
+      "Plataforma de Big Data com Hadoop e Spark",
+      "Serviço de banco de dados",
+      "Serviço de rede"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "49/65 - Qual serviço permite criar aplicações GraphQL?",
+    "options": ["Amazon API Gateway", "AWS AppSync", "AWS Lambda", "Amazon CloudFront"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "50/65 - O que é AWS Glue?",
+    "options": [
+      "Serviço de ETL (Extract, Transform, Load)",
+      "Serviço de banco de dados",
+      "Serviço de rede",
+      "Serviço de monitoramento"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "51/65 - Qual serviço fornece reconhecimento de imagens e vídeos?",
+    "options": ["Amazon Comprehend", "Amazon Rekognition", "Amazon Polly", "Amazon Transcribe"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "52/65 - O que é Amazon Neptune?",
+    "options": [
+      "Banco de dados relacional",
+      "Banco de dados de grafos",
+      "Data warehouse",
+      "Serviço de cache"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "53/65 - Qual serviço AWS fornece firewall gerenciado para aplicações web?",
+    "options": ["AWS Shield", "AWS WAF", "Amazon GuardDuty", "AWS Firewall Manager"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "54/65 - O que é Amazon Timestream?",
+    "options": [
+      "Banco de dados de séries temporais",
+      "Serviço de agendamento",
+      "Serviço de backup",
+      "Serviço de monitoramento"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "55/65 - Qual serviço permite criar modelos de machine learning sem código?",
+    "options": ["Amazon SageMaker", "Amazon Rekognition", "Amazon Comprehend", "AWS DeepLens"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "56/65 - O que é AWS Outposts?",
+    "options": [
+      "Serviço de CDN",
+      "Infraestrutura AWS no data center do cliente",
+      "Serviço de backup",
+      "Serviço de rede"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "57/65 - Qual serviço fornece análise de vulnerabilidades em instâncias EC2?",
+    "options": ["Amazon Inspector", "AWS Shield", "Amazon GuardDuty", "AWS WAF"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "58/65 - O que é Amazon DocumentDB?",
+    "options": [
+      "Banco de dados compatível com MongoDB",
+      "Serviço de armazenamento de documentos",
+      "Banco de dados relacional",
+      "Data warehouse"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "59/65 - Qual serviço AWS fornece backup automatizado e gerenciado?",
+    "options": ["AWS Backup", "Amazon S3", "AWS Storage Gateway", "Amazon EBS Snapshots"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "60/65 - O que é AWS Systems Manager?",
+    "options": [
+      "Serviço de gerenciamento e automação de infraestrutura",
+      "Serviço de banco de dados",
+      "Serviço de rede",
+      "Serviço de armazenamento"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "61/65 - Qual serviço permite executar código em edge locations?",
+    "options": ["AWS Lambda", "Lambda@Edge", "Amazon CloudFront", "AWS Outposts"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "62/65 - O que é Amazon Quantum Ledger Database (QLDB)?",
+    "options": [
+      "Banco de dados de blockchain",
+      "Banco de dados de ledger imutável",
+      "Banco de dados relacional",
+      "Banco de dados NoSQL"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "63/65 - Qual serviço AWS fornece análise de dados em tempo real com SQL?",
+    "options": ["Amazon Athena", "Amazon Kinesis Data Analytics", "Amazon EMR", "AWS Glue"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "64/65 - O que é AWS Control Tower?",
+    "options": [
+      "Serviço para configurar e governar ambientes multi-conta",
+      "Serviço de monitoramento",
+      "Serviço de banco de dados",
+      "Serviço de rede"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "65/65 - Qual serviço AWS fornece análise de custos com recomendações de Reserved Instances?",
+    "options": ["AWS Budgets", "AWS Cost Explorer", "AWS Pricing Calculator", "AWS Trusted Advisor"],
+    "correctAnswers": [1]
   }
 ]
