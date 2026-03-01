@@ -1,0 +1,127 @@
+[
+  {
+    "question": "1/20 - O que significa o modelo de responsabilidade compartilhada da AWS?",
+    "options": [
+      "A AWS gerencia a segurança da nuvem e o cliente gerencia a segurança na nuvem",
+      "A AWS gerencia tudo, cliente não precisa fazer nada",
+      "O cliente gerencia a infraestrutura física e a AWS gerencia as aplicações",
+      "Ambos são responsáveis igualmente por todas as camadas"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "2/20 - Qual serviço é ideal para armazenar objetos (imagens, backups) com alta durabilidade e acesso via HTTP?",
+    "options": ["Amazon EBS","Amazon S3","Amazon RDS","Amazon EFS"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "3/20 - Qual serviço permite executar código sem precisar provisionar servidores?",
+    "options": ["Amazon EC2","AWS Lambda","AWS Fargate","AWS Batch"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "4/20 - O que é uma Availability Zone (AZ)?",
+    "options": [
+      "Um data center único dentro de uma região",
+      "Uma região geográfica inteira",
+      "Um tipo de instância EC2",
+      "Um serviço gerenciado da AWS"
+    ],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "5/20 - Qual serviço você usaria para gerenciar identidades e permissões de usuários na AWS?",
+    "options": ["Amazon Cognito","AWS IAM","AWS KMS","AWS Directory Service"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "6/20 - Para reduzir custos em instâncias EC2 que não precisam rodar continuamente, qual opção é mais apropriada?",
+    "options": ["Instâncias Reserved","Instâncias Spot","Instâncias Dedicated","Instâncias On-Demand"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "7/20 - Qual serviço AWS fornece monitoramento de métricas e logs e permite criar alarmes?",
+    "options": ["AWS CloudTrail","AWS Config","Amazon CloudWatch","AWS Trusted Advisor"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "8/20 - Qual serviço registra chamadas de API e eventos de gerenciamento na conta AWS (auditoria)?",
+    "options": ["AWS CloudTrail","Amazon CloudWatch","AWS X-Ray","AWS Config"],
+    "correctAnswers": [0]
+  },
+  {
+    "question": "9/20 - Qual ferramenta ajuda a estimar custos mensais da AWS antes de implantar recursos?",
+    "options": ["AWS Cost Explorer","AWS Budgets","AWS Pricing Calculator","AWS Billing Dashboard"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "10/20 - Você precisa distribuir tráfego globalmente com baixa latência para usuários. Qual serviço usar?",
+    "options": ["Amazon Route 53","Amazon CloudFront","AWS Global Accelerator","Elastic Load Balancer"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "11/20 - Qual serviço é um banco de dados relacional gerenciado pela AWS?",
+    "options": ["Amazon DynamoDB","Amazon RDS","Amazon Redshift","Amazon Aurora Serverless"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "12/20 - O que é o AWS Free Tier (camada gratuita)?",
+    "options": [
+      "Recursos gratuitos para sempre sem limites",
+      "Ofertas promocionais que podem incluir limites e duração",
+      "Garantia de reembolso de custos",
+      "Serviços gratuitos apenas para empresas parceiras"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "13/20 - Qual serviço fornece balanceamento de carga para tráfego HTTP/HTTPS e WebSocket com roteamento baseado em conteúdo?",
+    "options": ["Network Load Balancer","Classic Load Balancer","Application Load Balancer","Gateway Load Balancer"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "14/20 - Em uma VPC, qual recurso controla o tráfego de entrada/saída em nível de instância?",
+    "options": ["Route Table","Internet Gateway","Security Group","Network ACL"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "15/20 - Qual pilar do AWS Well-Architected Framework foca em proteger dados, sistemas e ativos?",
+    "options": ["Performance Efficiency","Operational Excellence","Security","Cost Optimization"],
+    "correctAnswers": [2]
+  },
+  {
+    "question": "16/20 - Qual serviço ajuda a armazenar e gerenciar segredos (senhas, chaves API) de forma segura?",
+    "options": ["AWS KMS","AWS Secrets Manager","AWS IAM","AWS Shield"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "17/20 - O que é Amazon S3 Glacier?",
+    "options": [
+      "Um serviço para executar contêineres",
+      "Uma classe de armazenamento para arquivamento de longo prazo",
+      "Um banco de dados NoSQL",
+      "Um serviço de mensageria"
+    ],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "18/20 - Qual serviço é indicado para filas (mensageria) entre componentes desacoplados?",
+    "options": ["Amazon SNS","Amazon SQS","Amazon MQ","Amazon Kinesis"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "19/20 - Qual recurso permite conectar uma VPC à Internet?",
+    "options": ["NAT Gateway","Internet Gateway","VPC Endpoint","Elastic IP"],
+    "correctAnswers": [1]
+  },
+  {
+    "question": "20/20 - Para reduzir latência local para usuários finais, qual prática é recomendada?",
+    "options": [
+      "Usar uma única região para reduzir custos",
+      "Distribuir conteúdo via CDN (CloudFront)",
+      "Aumentar o tamanho das instâncias EC2",
+      "Usar apenas instâncias On-Demand"
+    ],
+    "correctAnswers": [1]
+  }
+]

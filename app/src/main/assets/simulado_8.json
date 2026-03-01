@@ -1,0 +1,802 @@
+[
+  {
+    "question": "O que a AWS faz quando um dispositivo de armazenamento chega ao fim de sua vida útil?",
+    "options": [
+      "A AWS segue um processo de desativação rigoroso, conforme descrito nos procedimentos de conformidade.",
+      "A AWS simplesmente apaga os dados do dispositivo e o descarta.",
+      "A AWS apaga os discos e os envia de volta ao fabricante para que este adquira um novo.",
+      "A AWS arquiva o dispositivo caso os clientes solicitem seus dados novamente."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual dos seguintes modelos de computação em nuvem oferece o maior nível de flexibilidade e controle de gerenciamento sobre seus recursos?",
+    "options": [
+      "Software como Serviço (SaaS)",
+      "Função como Serviço (FaaS)",
+      "Plataforma como Serviço (PaaS)",
+      "Infraestrutura como Serviço (IaaS)"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual serviço da AWS ajudará você a avaliar e otimizar seus ambientes locais e em nuvem atuais, com base na utilização real de recursos, licenciamento de terceiros e dependências de aplicativos?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Cost and Usage Report",
+      "AWS Optimization and Licensing Assessment (OLA)",
+      "AWS Pricing Calculator"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa planeja usar a AWS Cloud para ampliar os recursos de seu data center local e, assim, melhor atender seus clientes em todo o mundo. Quais são os benefícios para a empresa ao usar a AWS?",
+    "options": [
+      "Aproveite as enormes economias de escala.",
+      "Beneficie-se de descontos massivos do site de compras Amazon.com",
+      "Substituir custos variáveis elevados por despesas iniciais de capital em infraestrutura.",
+      "Substituir custos variáveis baixos por despesas iniciais de infraestrutura de capital"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual requisito de conformidade a AWS atendeu que permite o tratamento de informações médicas?",
+    "options": [
+      "HIPAA",
+      "PCI DSS",
+      "SOC 1",
+      "SOC 2"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Como desenvolvedor web, você precisa analisar e depurar aplicações distribuídas em produção que possuem arquitetura de microsserviços. Qual serviço de monitoramento da AWS seria mais útil para você?",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Config",
+      "AWS X-Ray"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa de comércio eletrônico está considerando migrar seu site para a AWS Cloud para melhorar sua escalabilidade e reduzir custos. Quais afirmações explicam o valor comercial da migração para a AWS Cloud? (Selecione DUAS.)",
+    "options": [
+      "Empresas que migram para a AWS Cloud reduzem os custos de TI relacionados à infraestrutura, liberando orçamento para reinvestimento em outras áreas.",
+      "A migração para a AWS Cloud oferece à empresa de comércio eletrônico acesso a recursos avançados de análise e aprendizado de máquina.",
+      "Os aplicativos são modernizados porque a migração para a AWS Cloud exige que as empresas reestruturem e reescrevam todos os aplicativos corporativos.",
+      "As empresas que migram para a AWS Cloud podem se beneficiar da melhoria dos acordos de nível de serviço (SLAs), ao mesmo tempo que reduzem os riscos e as interrupções não planejadas.",
+      "A migração de aplicações empresariais para a AWS Cloud torna essas aplicações automaticamente disponíveis em dispositivos móveis."
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS permite acesso de nível de administrador (usuário root) ao sistema operacional? (Selecione DOIS)",
+    "options": [
+      "Instância do Amazon EC2",
+      "Banco de dados Amazon DynamoDB",
+      "Cluster Amazon EMR",
+      "Fila Amazon SQS"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ]
+  },
+  {
+    "question": "Você tem uma instância EC2 do Amazon Linux em execução por uma hora e meia. Como a AWS irá cobrar por esse uso?",
+    "options": [
+      "Você será cobrado apenas pela hora utilizada, de acordo com a regra de cobrança por hora.",
+      "Você será cobrado por uma hora e vinte e nove minutos, de acordo com a regra de cobrança por segundo.",
+      "Você será cobrado por uma hora e trinta minutos, de acordo com a regra de cobrança por segundo.",
+      "Será cobrada uma hora e trinta minutos, de acordo com a regra de cobrança por hora."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Para atender aos requisitos de conformidade, você deve criar e gerenciar um catálogo de serviços da AWS aprovados para uso pela sua equipe de desenvolvimento. Qual serviço da AWS você deve usar para isso?",
+    "options": [
+      "Você deve usar o AWS Service Catalog.",
+      "Você deve usar o AWS Management Console.",
+      "Você deve usar o AWS Organizations.",
+      "Você deve usar o AWS Marketplace."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Como cliente da AWS, que tipo de oferta você herda automaticamente da AWS após se cadastrar?",
+    "options": [
+      "Todos os dados que você armazena e recupera da AWS",
+      "Todas as responsabilidades na aplicação das políticas de segurança e conformidade da sua organização.",
+      "Todo o hardware e software que você provisiona na nuvem AWS.",
+      "Todas as melhores práticas de políticas, arquitetura e processos operacionais da AWS, criadas para atender às suas necessidades."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é a escolha mais econômica e escalável para armazenamento de objetos?",
+    "options": [
+      "AWS Storage Gateway",
+      "Amazon S3",
+      "Amazon EFS",
+      "Amazon EBS"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como desenvolvedor em nuvem, você precisa acessar seus recursos da AWS remotamente por meio da Interface de Linha de Comando (CLI) da AWS. Qual método de autenticação você usará nesse caso?",
+    "options": [
+      "Chaves de acesso",
+      "MFA",
+      "Pares de chaves SSH",
+      "Nome de usuário e senha"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções faz parte das melhores práticas para proteger sua conta da AWS?",
+    "options": [
+      "Conceder o maior privilégio",
+      "Ative a autenticação multifator (MFA) somente na conta raiz.",
+      "Crie um usuário IAM com privilégios de administrador em vez de usar o usuário root.",
+      "Defina sempre manualmente as permissões para cada usuário individual do IAM."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual serviço da AWS pode monitorar o status de conformidade dos seus recursos da AWS em relação a um conjunto de diretrizes de conformidade?",
+    "options": [
+      "AWS IAM",
+      "AWS Artifact",
+      "AWS Config",
+      "Amazon CloudWatch"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Como as despesas são transferidas ao migrar de servidores tradicionais para a nuvem?",
+    "options": [
+      "A despesa operacional é trocada por despesa variável.",
+      "A despesa de capital é trocada por despesa operacional.",
+      "A despesa variável é trocada por despesa de capital.",
+      "A despesa de capital é trocada por despesa variável."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Que medidas podem ser tomadas para reforçar a segurança de uma conta raiz da AWS em caso de suspeita de uso não autorizado?",
+    "options": [
+      "Desative as credenciais da conta root e use um usuário IAM com privilégios de administrador.",
+      "Ative o CloudTrail para monitorar logins suspeitos.",
+      "Altere a senha da conta root com frequência.",
+      "Configure a autenticação multifator (MFA) para sua conta raiz."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Que infraestrutura a Amazon CloudFront utiliza para acelerar a entrega de conteúdo aos clientes?",
+    "options": [
+      "Zonas de disponibilidade",
+      "Direct Connect",
+      "Zonas locais",
+      "Locais de borda"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes afirmações é verdadeira em relação ao AWS Cost and Usage Report? (Selecione DUAS.)",
+    "options": [
+      "Permite carregar suas informações de custo e uso no Amazon Athena, Amazon Redshift e AWS QuickSight.",
+      "Fornece dados detalhados sobre seus custos e uso da AWS.",
+      "Ajuda você a visualizar, entender e gerenciar seus custos e uso da AWS ao longo do tempo por meio de uma interface intuitiva que permite criar rapidamente relatórios personalizados.",
+      "Fornece um painel de controle que permite visualizar o status dos seus gastos mensais com a AWS e oferece acesso a diversos outros produtos de gerenciamento de custos que podem ajudar você a analisar mais detalhadamente seus custos e uso da AWS.",
+      "Permite definir orçamentos personalizados de custo e utilização, com alertas que são acionados quando esses limites são excedidos."
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções de compra oferece o desconto mais significativo em comparação com os preços de instâncias sob demanda para processar cargas de trabalho estáveis que serão executadas continuamente por um ano e também fornecer reserva de capacidade?",
+    "options": [
+      "Instância Reservada Conversível",
+      "Instância Dedicada",
+      "Instância Reservada Padrão",
+      "Savings Plans"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa hospeda servidores de jogos na região Leste dos EUA (Norte da Virgínia). No entanto, jogadores da Europa e da Ásia enfrentam alta latência, o que impacta negativamente sua experiência de jogo. Como a empresa pode reduzir a latência e melhorar a experiência de jogo para jogadores nessas regiões?",
+    "options": [
+      "Implantar servidores de jogos adicionais na Europa e na Ásia.",
+      "Ative o dimensionamento automático para os servidores de jogos na região Leste dos EUA (Norte da Virgínia).",
+      "Utilize o AWS Direct Connect para estabelecer conectividade de rede dedicada.",
+      "Implemente o Amazon CloudFront como solução de distribuição de conteúdo."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "De qual das seguintes opções você precisa para interagir programaticamente com seu ambiente AWS? (Selecione DUAS.)",
+    "options": [
+      "AWS Management Console",
+      "AWS Lambda",
+      "AWS SDK",
+      "Nome de usuário e senha da conta",
+      "Chaves de acesso"
+    ],
+    "correctAnswers": [
+      2,
+      4
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções a AWS gerencia automaticamente para você? (Selecione DUAS.)",
+    "options": [
+      "Forneça proteção de firewall de aplicativos web para seus endpoints públicos.",
+      "Garante que seus dados sejam armazenados com segurança e replicados entre as Zonas de Disponibilidade.",
+      "Introduzir atualizações e correções para os sistemas operacionais convidados do EC2.",
+      "Proteja os data centers da AWS contra riscos ambientais.",
+      "Introduzir atualizações e correções para hipervisores EC2"
+    ],
+    "correctAnswers": [
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Qual serviço de armazenamento da AWS oferece desempenho de leitura e gravação de disco mais rápido e fornece armazenamento temporário em nível de bloco para sua instância?",
+    "options": [
+      "EBS HDD otimizado para alta taxa de transferência",
+      "EBS SSD com IOPS provisionados",
+      "EFS",
+      "Instance Store"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Um cliente sofreu recentemente um ataque de injeção de SQL no banco de dados de sua aplicação web hospedada no EC2. Ele abriu um chamado de suporte na AWS. Qual deve ser a resposta da AWS?",
+    "options": [
+      "A AWS não deve ser responsabilizada pelos danos, visto que o cliente deveria ter aplicado os patches necessários na instância EC2.",
+      "A AWS deve reiterar que o cliente é responsável pela segurança de seus aplicativos na nuvem.",
+      "A AWS e o cliente devem contatar uma empresa de auditoria independente para verificar o incidente.",
+      "A AWS deveria reforçar a segurança de sua infraestrutura para reduzir esse tipo de incidente."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual serviço oferece descontos por volume ao ativar a Faturação Consolidada?",
+    "options": [
+      "Amazon SNS",
+      "AWS CloudTrail",
+      "Amazon CloudFront",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa migrou recentemente seu aplicativo de e-commerce para a AWS para lidar com um aumento repentino no tráfego de clientes. O aplicativo está hospedado em instâncias do Amazon EC2 e usa o Amazon RDS para gerenciar o catálogo de produtos e o estoque. Qual das seguintes opções oferece soluções de recuperação de desastres para o Amazon EC2? (Selecione DUAS).",
+    "options": [
+      "Amazon EC2 AMI",
+      "AWS Health Dashboard",
+      "AWS Security Hub",
+      "Amazon EBS Snapshots",
+      "Amazon RDS Snapshots"
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é um exemplo de uma aplicação de alta disponibilidade na AWS?",
+    "options": [
+      "Executando o CloudFront para o site estático no seu bucket S3",
+      "Utilizando o Amazon SQS para separar as mensagens entre um remetente e um destinatário.",
+      "Executando sua instância RDS com múltiplas Zonas de Disponibilidade habilitadas",
+      "Executando instâncias spot para suas cargas de trabalho do EC2"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa possui um aplicativo complexo em execução em instâncias do Amazon EC2 e deseja automatizar o processo de implantação para garantir implantações consistentes e confiáveis em diferentes ambientes. O aplicativo requer etapas específicas de implantação, como verificações pré-implantação, instalação e inicialização do aplicativo e verificações pós-implantação. Qual serviço da AWS facilitará a automação dessas etapas de implantação?",
+    "options": [
+      "AWS CodeDeploy",
+      "AWS CodeCommit",
+      "AWS CodePipeline",
+      "AWS CodeBuild"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Que tipo de volume EBS é recomendado para a maioria das cargas de trabalho e que também pode ser usado como volume de inicialização?",
+    "options": [
+      "SSD de uso geral",
+      "HDD otimizado para alto desempenho",
+      "HDD frio",
+      "SSD com IOPS provisionadas"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Uma empresa possui uma instância EC2 personalizada em execução em sua aplicação web mais recente. Como ela pode criar uma cópia exata dessa instância em outra região?",
+    "options": [
+      "Crie uma AMI dourada da instância e copie-a para a outra região.",
+      "Crie backups de todos os volumes EBS e copie-os para outra região.",
+      "Crie um balanceador de carga com um grupo de escalonamento automático que esteja vinculado entre duas regiões. Aumente a escala para ter outra instância em execução na outra região.",
+      "Não há como fazer isso na AWS. Você terá que realizar a transferência manualmente."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Quais são os benefícios de usar o Amazon DynamoDB como seu banco de dados? (Selecione DOIS.)",
+    "options": [
+      "Você pode armazenar diferentes tipos de dados não estruturados que normalmente não seriam adequados para bancos de dados relacionais.",
+      "O DynamoDB possui capacidade de autorrecuperação, o que significa que seus dados são verificados em busca de erros e reparados continuamente.",
+      "De acordo com o SLA, o DynamoDB oferece 99,99% de disponibilidade.",
+      "O tamanho do banco de dados é dimensionado automaticamente, para que você não precise se preocupar com a capacidade.",
+      "Você pode executar consultas e junções muito complexas sem perda de desempenho."
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Uma startup de jogos para dispositivos móveis planeja atualizar seus servidores locais para melhor atender os consumidores. No entanto, os dados armazenados localmente não podem ser migrados devido a requisitos de conformidade. Qual das seguintes opções você recomendaria para atender a esse requisito?",
+    "options": [
+      "Migre gradualmente seus servidores web e dados para a AWS, mantendo seu orçamento sob controle.",
+      "Utilize os servidores web da AWS, mas mantenha seus dados localmente. Configure um modelo híbrido no qual os servidores web da AWS se comuniquem com seu armazenamento de dados local.",
+      "Descarte todos os seus servidores e migre seus dados para a AWS, pois será mais barato e mais durável armazenar dados na nuvem.",
+      "Não realize nenhuma migração agora para economizar capital para uma migração em larga escala no futuro."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual plano de pagamento oferece o maior desconto na compra de instâncias reservadas do EC2?",
+    "options": [
+      "Pagamento parcial antecipado para uma compra com prazo de 3 anos.",
+      "Pagamento integral antecipado para uma compra com prazo de 1 ano.",
+      "Pagamento integral antecipado para uma compra com prazo de 3 anos.",
+      "Pagamento parcial antecipado para uma compra com prazo de 1 ano."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções o plano de suporte Enterprise oferece aos clientes da AWS? (Selecione DUAS.)",
+    "options": [
+      "Acesso limitado às 7 verificações principais do programa Trusted Advisor.",
+      "Suporte com tempo de resposta de 5 minutos caso seu sistema crítico para os negócios apresente problemas.",
+      "Acesso a laboratórios online com ritmo de aprendizagem individual.",
+      "Gestão proativa de contas técnicas",
+      "Suporte com tempo de resposta de 15 minutos caso seu sistema de produção apresente problemas."
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Um engenheiro de software está com dificuldades para migrar e configurar um aplicativo licenciado em uma instância EC2. Qual das seguintes opções você recomendaria para colocar o aplicativo em funcionamento na AWS rapidamente?",
+    "options": [
+      "Utilize o AWS Application Discovery Service para criar uma cópia exata da aplicação no EC2.",
+      "Crie uma imagem Docker da aplicação e execute o Docker nas instâncias EC2.",
+      "Configure uma conexão VPN da rede local dela para a VPC da AWS, o que significa que o trabalho dela agora está sendo executado na nuvem.",
+      "Tente encontrar uma AMI no AWS Marketplace que forneça uma configuração semelhante à pilha de aplicativos dela."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções representa um benefício do uso do AWS Config?",
+    "options": [
+      "Facilita o cumprimento dos requisitos regulamentares e das melhores práticas.",
+      "Facilita o gerenciamento do acesso do usuário aos recursos da AWS.",
+      "Facilita o monitoramento em tempo real dos recursos da AWS em busca de ameaças à segurança.",
+      "Facilita a automatização da implantação de recursos da AWS."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Quais dos seguintes serviços da AWS são considerados serviços globais? (Selecione DOIS.)",
+    "options": [
+      "Amazon Route 53",
+      "AWS CloudTrail",
+      "AWS Lambda",
+      "AWS WAF",
+      "Amazon VPC"
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes perspectivas inclui as capacidades fundamentais do AWS Cloud Adoption Framework (AWS CAF)?",
+    "options": [
+      "Segurança",
+      "Sustentabilidade",
+      "Confiabilidade",
+      "Escalabilidade"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Um cliente possui um site popular com milhões de visitantes do mundo todo e um banco de dados com alta demanda de leitura. Qual das seguintes opções é a melhor para aumentar a taxa de transferência de leitura do banco de dados?",
+    "options": [
+      "Ativar réplicas em espera do Amazon RDS",
+      "Habilitar réplicas de leitura do Amazon RDS",
+      "Habilitar implantações Multi-AZ",
+      "Use o Amazon SQS para enfileirar as solicitações."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é um exemplo de IaaS na AWS?",
+    "options": [
+      "AWS CloudFormation",
+      "AWS Elastic Beanstalk",
+      "Amazon EC2",
+      "AWS IAM"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Em caso de desastre ou interrupção, a AWS recomenda que você distribua seus servidores e bancos de dados em locais diferentes, no mínimo.",
+    "options": [
+      "Contas da AWS",
+      "Zonas de disponibilidade",
+      "VPCs",
+      "Regiões"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual dos seguintes motores RDS permite que você traga sua própria licença (BYOL)?",
+    "options": [
+      "PostgreSQL",
+      "MS SQL",
+      "Oracle",
+      "MySQL"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Um funcionário está solicitando acesso aos seus buckets S3. Qual deve ser o nível de acesso que você deve conceder a ele?",
+    "options": [
+      "Dê a ele acesso total ao S3.",
+      "Conceda a ele níveis de acesso de administrador.",
+      "Dê a ele acesso somente leitura.",
+      "Pergunte que tipo de acesso ele precisa e conceda-lhe apenas essas permissões."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual é uma boa medida de precaução para recuperação de desastres ao lançar um aplicativo web dinâmico com cargas de trabalho críticas que precisam estar disponíveis o tempo todo?",
+    "options": [
+      "Inicie aplicações em duas Zonas de Disponibilidade diferentes para evitar tempo de inatividade durante interrupções regionais.",
+      "Inicie aplicações em duas regiões diferentes da AWS para evitar tempo de inatividade durante interrupções regionais.",
+      "Mantenha sempre os dados de backup armazenados em dois buckets S3 diferentes.",
+      "Execute aplicativos na nuvem, mas mantenha todos os dados localmente."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma organização planeja criar um formulário de inscrição online com um recurso de detecção para reconhecer atributos presentes nas imagens. Esse recurso removerá formulários que contenham fotos impróprias enviadas pelos usuários. No entanto, a equipe de desenvolvimento não tem experiência na criação de modelos de aprendizado de máquina. Qual dos seguintes serviços você recomendaria?",
+    "options": [
+      "Amazon Kendra",
+      "Amazon Detective",
+      "Amazon Rekognition",
+      "Amazon SageMaker"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma importante empresa de jogos para dispositivos móveis possui um servidor crítico em sua infraestrutura na AWS que está atualmente inativo. O administrador de sistemas precisa restabelecê-lo em até 15 minutos para garantir a continuidade do serviço. Qual dos seguintes planos de suporte permitirá que o administrador entre em contato com o suporte técnico para resolver o problema imediatamente?",
+    "options": [
+      "Developer",
+      "Enterprise On-Ramp",
+      "Enterprise",
+      "Business"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual vantagem da computação em nuvem descreve como você pode implantar facilmente seu aplicativo em várias regiões da AWS com apenas alguns cliques?",
+    "options": [
+      "Pare de gastar dinheiro operando e mantendo data centers.",
+      "Pare de adivinhar a capacidade",
+      "Aproveite as enormes economias de escala.",
+      "Expanda seus horizontes globalmente em minutos."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual é a disposição correta dos componentes da Infraestrutura Global da AWS de acordo com o tamanho de sua área de cobertura geográfica, em ordem decrescente?",
+    "options": [
+      "Regiões, Localizações de Borda, Zonas de Disponibilidade",
+      "Localizações de borda, zonas de disponibilidade, regiões",
+      "Regiões, Zonas de Disponibilidade, Localizações de Borda",
+      "Zonas de disponibilidade, locais de borda, regiões"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços combina redes 5G com serviços de computação e armazenamento da AWS para beneficiar aplicativos móveis de alto desempenho?",
+    "options": [
+      "AWS Cloud9",
+      "AWS Amplify",
+      "AWS Control Tower",
+      "AWS Wavelength"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços você deve provisionar se o seu data center local precisar de espaço de armazenamento adicional sem ter que migrar dados?",
+    "options": [
+      "AWS Direct Connect",
+      "AWS Storage Gateway",
+      "AWS Backup",
+      "AWS Snowball Edge"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Quando usar o Amazon RDS é uma opção melhor do que usar um banco de dados local?",
+    "options": [
+      "Quando você precisa de controle total do seu banco de dados SQL",
+      "Quando você precisa de uma conexão de rede rápida com seus servidores web locais.",
+      "Quando você deseja se desvencilhar das responsabilidades administrativas.",
+      "Quando você precisa de uma licença Enterprise gratuita para seus bancos de dados corporativos"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual serviço da AWS permitirá que você disponibilize seu conteúdo web dinâmico para usuários em todo o mundo?",
+    "options": [
+      "Amazon S3",
+      "Amazon Route 53",
+      "AWS Elastic Load Balancer",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma startup precisa de um banco de dados com capacidade de autorrecuperação e alta taxa de transferência. Qual dos seguintes serviços atende a esses critérios?",
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon Aurora",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual modelo de computação em nuvem lida com serviços como instâncias EC2?",
+    "options": [
+      "DBaaS",
+      "PaaS",
+      "IaaS",
+      "SaaS"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Em qual das seguintes situações é melhor usar funções do IAM em vez de usuários do IAM? (Selecione DUAS opções.)",
+    "options": [
+      "Quando você precisa de uma interface gráfica para interagir com seu ambiente AWS.",
+      "Se você tiver funcionários que precisarão acessar seus recursos da AWS constantemente,",
+      "Quando você tem entidades externas que precisam executar ações específicas em sua conta da AWS.",
+      "Quando você precisar de um administrador para gerenciar sua conta da AWS.",
+      "Quando você deseja conceder permissões aos serviços da AWS para executar determinadas ações."
+    ],
+    "correctAnswers": [
+      2,
+      4
+    ]
+  },
+  {
+    "question": "Uma startup planeja hospedar um site WordPress simples na AWS. No entanto, devido ao conhecimento limitado de seus desenvolvedores sobre a AWS, eles buscam o método mais fácil de implantar o site. Qual serviço da AWS a startup deve usar?",
+    "options": [
+      "Amazon Lightsail",
+      "AWS Glue",
+      "Amazon Elastic Compute Cloud (EC2)",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual é a vantagem da computação em nuvem em termos de gastos com equipamentos?",
+    "options": [
+      "A AWS garante que os dispositivos físicos sejam continuamente protegidos e monitorados.",
+      "A AWS utiliza os equipamentos mais baratos possíveis para seus data centers, de forma a não cobrar taxas elevadas.",
+      "Você pode facilmente dimensionar e gerenciar o número de recursos em execução no seu ambiente de nuvem.",
+      "A AWS introduz reduções de custos em seus serviços todos os anos."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa possui uma grande quantidade de dados armazenados em diversas fontes, como S3, Redshift e RDS, e precisa extrair, transformar e carregar esses dados em um data warehouse. Qual serviço da AWS pode ajudar a automatizar esse processo?",
+    "options": [
+      "AWS Glue",
+      "AWS Lambda",
+      "Amazon EC2",
+      "Amazon Athena"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Uma empresa costumava enfrentar atrasos no desenvolvimento de novos serviços devido ao tempo necessário para adquirir e configurar servidores locais. Recentemente, migraram sua infraestrutura para a AWS Cloud. Essa mudança permitiu que criassem ambientes de teste em poucos dias, acelerando o lançamento de seus serviços no mercado. Qual dos seguintes benefícios da AWS Cloud é exemplificado nesse cenário específico?",
+    "options": [
+      "Elasticidade",
+      "Implantação global em minutos",
+      "Economia de custos",
+      "Agilidade"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa precisa executar suas cargas de trabalho em uma nuvem híbrida. Devido à conformidade regulatória, algumas partes da infraestrutura geral precisam estar em infraestrutura local. A empresa deseja usar as mesmas chamadas de API tanto para sua nuvem AWS quanto para suas cargas de trabalho locais. Qual serviço ou oferta da AWS a empresa deve usar para atender a esses requisitos?",
+    "options": [
+      "Dedicated Hosts",
+      "AWS Local Zones",
+      "AWS Wavelength",
+      "AWS Outposts"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Onde o cliente pode visualizar o uso de sua Instância Reservada no último mês?",
+    "options": [
+      "AWS Organizations",
+      "Amazon EC2",
+      "AWS Billing Console",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes ações não afeta os custos ao usar o Amazon S3?",
+    "options": [
+      "Custos de transferência de dados para o carregamento de objetos no seu bucket S3.",
+      "Fazendo requisições GET para seus objetos S3.",
+      "Mover objetos do seu bucket S3 para outro bucket.",
+      "Optar pela S3 Standard-IA em vez da S3 One Zone-IA"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Como administrador de uma empresa global, você foi encarregado de criar vários buckets do Amazon S3. O que você deve considerar ao nomear cada um dos buckets? (Selecione DUAS opções)",
+    "options": [
+      "Os nomes dos buckets podem ser formatados como um endereço IP.",
+      "Os nomes dos buckets devem começar e terminar com uma letra ou um número.",
+      "Os nomes dos buckets devem ser exclusivos em todas as contas da AWS em todas as regiões da AWS dentro de uma partição (regiões padrão, regiões da China, AWS GovCloud).",
+      "Os nomes dos buckets podem consistir apenas em letras minúsculas e números."
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Seu líder de equipe solicitou que você reforce a segurança do seu ambiente. Você deseja otimizar sua infraestrutura AWS, melhorar a segurança e o desempenho, reduzir custos e monitorar as cotas de serviço. Você também precisa garantir que as permissões do seu bucket do Amazon S3 não tenham acesso irrestrito. Qual serviço você deve usar?",
+    "options": [
+      "Amazon S3 ACL",
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  }
+]

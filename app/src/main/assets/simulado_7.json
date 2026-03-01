@@ -1,0 +1,832 @@
+[
+  {
+    "question": "Como Engenheiro de Dados, você precisa projetar uma solução de armazenamento tolerante a falhas para sua carga de trabalho analítica. Você precisa escolher entre as classes de armazenamento S3 One Zone-IA e S3 Standard-IA. O que acontece com seus dados se você estiver usando o S3 One Zone-IA e a Zona de Disponibilidade na qual seus dados estão armazenados for perdida?",
+    "options": [
+      "Seus dados são replicados em outra região da AWS para recuperação. Você pode acessar seus dados em outra região da AWS.",
+      "Você pode acessar seus dados em outra Zona de Disponibilidade.",
+      "Você não pode acessar seus dados sem a Zona de Disponibilidade.",
+      "Nada acontece. Você tem acesso aos seus dados."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Sua empresa possui 6 TB de dados que precisam ser coletados, pré-processados e transferidos para o bucket do Amazon S3. Qual dispositivo da família AWS Snow ofereceria a solução mais eficiente?",
+    "options": [
+      "AWS Snowmobile",
+      "AWS Snowcone",
+      "AWS Snowball Edge - Otimizado para Computação",
+      "AWS Snowball Edge - Otimizado para armazenamento"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você planeja projetar uma arquitetura fracamente acoplada. Quais dos seguintes serviços da AWS facilitam essa abordagem? (Selecione DOIS.)",
+    "options": [
+      "Amazon CloudWatch",
+      "Elastic Load Balancing",
+      "Amazon Simple Queue Service (SQS)",
+      "AWS CloudFormation",
+      "AWS CloudTrail"
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Selecione todos os componentes que determinam o preço do seu trabalho com AWS Snowball Edge. (Selecione TRÊS.)",
+    "options": [
+      "Região da AWS.",
+      "Se o dispositivo for mantido por mais de dez dias, você incorre em uma taxa para cada dia adicional que mantiver o dispositivo.",
+      "Taxas de envio.",
+      "Transferência de dados por GB para o Amazon S3."
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Quais são os diferentes formatos/transportes de entrega para receber notificações com o Amazon Simple Notification Service (Amazon SNS)? (Selecione TRÊS.)",
+    "options": [
+      "SMS - mensagens são enviadas para números de telefone registrados como mensagens de texto SMS.",
+      "HTTP, HTTPS - notificações serão entregues através de um HTTP POST para a URL especificada.",
+      "Email - mensagens são enviadas para endereços registrados como e-mail.",
+      "Chamada telefônica - mensagens são compiladas usando Amazon Polly e enviadas para números de telefone registrados como uma chamada telefônica."
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Selecione casos de uso que se encaixam bem com o Amazon Kinesis Data Streams. (Selecione DOIS.)",
+    "options": [
+      "Aplicações de streaming de mídia para dispositivos IoT habilitados para câmera",
+      "Aplicações de extração-transformação-carregamento (ETL) de streaming",
+      "Coleta de dados de log e eventos",
+      "Análise de dados em tempo real e métricas e relatórios em tempo real"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Imagine que você é responsável pela arquitetura dos recursos de nuvem da sua empresa e precisa cuidar da segurança usando o Amazon RDS. Selecione todas as afirmações verdadeiras. (Selecione DOIS.)",
+    "options": [
+      "Amazon Cognito é usado para controlar quem pode acessar a instância do banco de dados.",
+      "Os dados não são criptografados em repouso por padrão.",
+      "Amazon VPC é usado para isolar o banco de dados do tráfego da internet.",
+      "Grupos de segurança são usados para controlar o acesso à instância do banco de dados."
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Que tipo de implantação em nuvem permite que os clientes aproveitem a nuvem pública e coexistam com a infraestrutura local?",
+    "options": [
+      "Nuvem privada",
+      "Nuvem pública",
+      "Infraestrutura de TI legada",
+      "Nuvem híbrida"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Você é responsável por gerenciar sua Amazon VPC. Em que nível uma Network ACL é aplicada?",
+    "options": [
+      "Nível de Availability Zone",
+      "Nível de instância EC2",
+      "Nível de região",
+      "Nível de sub-rede"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Como Engenheiro de Dados, você precisa projetar uma solução de armazenamento tolerante a falhas para suas cargas de trabalho. Você não sabe qual classe de armazenamento escolher. Qual dos seguintes padrões de acesso funciona melhor com S3 Intelligent-Tiering? (Selecione DOIS.)",
+    "options": [
+      "Padrões de acesso de dados diários",
+      "Padrões de acesso de dados semanais",
+      "Padrões de acesso de armazenamento de longo prazo",
+      "Padrões de acesso desconhecidos",
+      "Padrões de acesso imprevisíveis"
+    ],
+    "correctAnswers": [
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Seu aplicativo de e-commerce precisa de acesso a um bucket específico do Amazon S3. O aplicativo será executado em uma instância EC2. O que você deve fazer para dar ao aplicativo acesso ao bucket com segurança?",
+    "options": [
+      "Você deve armazenar sua chave de acesso e chave de acesso secreta na instância EC2.",
+      "Você deve anexar uma função IAM à instância EC2 com uma política que conceda acesso ao bucket do Amazon S3.",
+      "Você deve usar políticas de bucket S3 para tornar o bucket público.",
+      "Você deve conceder acesso ao bucket S3 usando Access Control List (ACL)."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual dispositivo da AWS Snow Family é adequado para aplicações com espaço disponível mínimo e máxima portabilidade?",
+    "options": [
+      "AWS Snowball Edge Compute Optimized",
+      "AWS Snowball Edge Storage Optimized",
+      "AWS Snowcone",
+      "AWS Snowmobile"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Imagine que você é responsável pela arquitetura dos recursos de nuvem da sua empresa e precisa preparar bancos de dados relacionais na AWS Cloud. Quais dos seguintes mecanismos de banco de dados são compatíveis com o Amazon Aurora? (Selecione DOIS.)",
+    "options": [
+      "MySQL",
+      "PostgreSQL",
+      "SQLite",
+      "Oracle Database",
+      "Microsoft SQL Server"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Selecione todas as afirmações verdadeiras sobre escalabilidade sem servidor. (Selecione DOIS.)",
+    "options": [
+      "Arquitetos de aplicações não devem considerar custos ao escalar com serviços sem servidor.",
+      "Com serverless, você não precisa configurar auto-scaling porque está usando serviços gerenciados que têm escalabilidade horizontal integrada.",
+      "A computação sem servidor permite que você escale muito mais rápido do que com aplicações baseadas em servidor.",
+      "Serviços sem servidor como AWS Lambda não suportam escalabilidade."
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Selecione todas as afirmações verdadeiras sobre o volume do Amazon Elastic Block Store (EBS). (Selecione DOIS.)",
+    "options": [
+      "Você não pode fazer backup de volumes EBS.",
+      "Você pode anexar múltiplos volumes EBS a uma instância EC2.",
+      "O volume e a instância devem estar na mesma Availability Zone.",
+      "Você pode anexar um volume EBS a múltiplas instâncias EC2."
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você é responsável por preparar a migração do seu data center local para a AWS Cloud. Qual serviço você pode usar para transferir dados entre um dispositivo AWS Snowcone e o serviço de armazenamento na nuvem AWS?",
+    "options": [
+      "Amazon Kinesis Data Streams",
+      "Storage Gateway",
+      "AWS Glue",
+      "AWS DataSync"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Seu departamento de conformidade está preocupado com a nova infraestrutura em nuvem que sua empresa começou a usar. Você quer dar a eles acesso aos relatórios de segurança e conformidade da AWS e acordos online. Qual serviço da AWS você deve recomendar ao seu departamento de conformidade?",
+    "options": [
+      "Eles devem usar Amazon Inspector.",
+      "Eles devem usar AWS Shield.",
+      "Eles devem usar AWS Artifact.",
+      "Eles devem usar AWS Trusted Advisor."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Selecione todas as afirmações verdadeiras sobre Amazon Virtual Private Cloud (VPC). (Selecione DOIS.)",
+    "options": [
+      "Amazon VPC permite que você provisione uma seção logicamente isolada da nuvem Amazon Web Services (AWS) onde você pode executar recursos da AWS em uma rede virtual que você define.",
+      "Você tem controle completo sobre seu ambiente de rede virtual, incluindo seleção de suas próprias faixas de endereços IP, criação de sub-redes e configuração de tabelas de roteamento e gateways de rede.",
+      "Você não pode estabelecer uma conexão entre sua rede local e Amazon VPC.",
+      "Você não pode criar uma sub-rede voltada para o público para seus servidores web que tenham acesso à Internet."
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Você quer hospedar um site estático com bucket do Amazon S3 e registrar um novo domínio. Qual serviço da AWS você deve usar para registro de domínio?",
+    "options": [
+      "Amazon CloudFront",
+      "Amazon API Gateway",
+      "Amazon Virtual Private Cloud (Amazon VPC)",
+      "Amazon Route 53"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Imagine que você é responsável pela arquitetura dos recursos de nuvem da sua empresa e precisa preparar bancos de dados relacionais na AWS Cloud. Quais dos seguintes mecanismos de banco de dados são suportados pelo Amazon RDS? (Selecione TRÊS.)",
+    "options": [
+      "MySQL",
+      "Spark SQL",
+      "PostgreSQL",
+      "IBM DB2",
+      "Microsoft SQL Server"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      4
+    ]
+  },
+  {
+    "question": "O endereço IP público atribuído automaticamente associado à sua instância Amazon EC2 muda toda vez que você para e inicia a instância. Como você pode atribuir um endereço IP público estático à sua instância EC2 Linux que não muda quando você para/inicia a instância?",
+    "options": [
+      "Você deve associar um endereço Elastic IP à sua instância EC2.",
+      "Você não pode ter um endereço IP estático associado à sua instância EC2.",
+      "Você deve associar um endereço IP dinâmico à sua instância EC2.",
+      "Você deve associar um endereço IP público à sua instância EC2."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual é o pré-requisito para conectar um volume Amazon EBS a uma instância Amazon EC2?",
+    "options": [
+      "A instância Amazon EC2 e o volume Amazon EBS devem estar na mesma região da AWS e na mesma Availability Zone.",
+      "A instância Amazon EC2 e o volume Amazon EBS devem compartilhar certificados TLS.",
+      "A instância Amazon EC2 e o volume Amazon EBS devem estar na mesma região da AWS, mas podem estar em Availability Zones diferentes.",
+      "A instância Amazon EC2 e o volume Amazon EBS devem ser criptografados usando a mesma chave de criptografia AWS KMS."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS permite acesso de nível de administrador (usuário root) ao sistema operacional? (Selecione DOIS.)",
+    "options": [
+      "Instância Amazon EC2",
+      "Fila Amazon SQS",
+      "Cluster Amazon EMR",
+      "Banco de dados Amazon DynamoDB"
+    ],
+    "correctAnswers": [
+      0,
+      2
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você precisa estimar o custo para sua solução de arquitetura. Qual serviço da AWS você deve usar?",
+    "options": [
+      "AWS Cost Explorer",
+      "Amazon CloudWatch",
+      "AWS Pricing Calculator",
+      "AWS Budget"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Imagine que você é responsável pela arquitetura dos recursos de nuvem da sua empresa e precisa fornecer armazenamento de blocos para uso com suas instâncias Amazon EC2. Qual componente da AWS você usaria? (Selecione DOIS.)",
+    "options": [
+      "Compartilhamentos Amazon EFS",
+      "Compartilhamentos Amazon FSx for Lustre",
+      "Volumes de armazenamento de instância Amazon",
+      "Buckets Amazon S3",
+      "Volumes Amazon EBS"
+    ],
+    "correctAnswers": [
+      2,
+      4
+    ]
+  },
+  {
+    "question": "Como Desenvolvedor de Nuvem, você frequentemente implanta os mesmos recursos várias vezes. Você quer minimizar a sobrecarga operacional e usar uma abordagem de infraestrutura como código. Qual serviço da AWS você deve usar?",
+    "options": [
+      "AWS CodeCommit",
+      "AWS CloudFormation",
+      "AWS CodePipeline",
+      "AWS CodeDeploy"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Você está desenvolvendo um aplicativo sem servidor e quer projetar um pipeline CI/CD para todas as novas atualizações do aplicativo. Quais serviços da AWS você deve usar?",
+    "options": [
+      "Você deve usar CodeBuild para controle de versão, CodeDeploy para implantar o aplicativo e CodePipeline para acionar a implantação assim que um desenvolvedor enviar para CodeBuild.",
+      "Você deve usar CodeCommit para controle de versão, CodeDeploy para implantar o aplicativo e CodePipeline para acionar a implantação assim que um desenvolvedor enviar para CodeCommit.",
+      "Você deve usar CodeCommit para controle de versão, AWS CodeStar para construir um pacote de implantação e CodeDeploy para implantar o aplicativo.",
+      "Você deve usar CodeCommit para controle de versão, CodeDeploy para implantar o aplicativo e CodeBuild para acionar a implantação assim que um desenvolvedor enviar para CodeCommit."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você é responsável por preparar a estratégia de migração e projetar a arquitetura de rede. Selecione componentes do Amazon VPC. (Selecione TRÊS.)",
+    "options": [
+      "Launch template",
+      "Subnet",
+      "NAT Gateway",
+      "Internet Gateway",
+      "Amazon Machine Image (AMI)"
+    ],
+    "correctAnswers": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Amazon FSx for Lustre é projetado...",
+    "options": [
+      "para suportar milhões de objetos de armazenamento e acessado usando APIs REST.",
+      "para cargas de trabalho de computação de alto desempenho distribuídas.",
+      "como um sistema de arquivos Multi-AZ nativo para compartilhamentos de arquivos NFS.",
+      "para suportar volumes de armazenamento de blocos com instâncias Amazon EC2."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como Desenvolvedor de Nuvem, você quer registrar operações em nível de objeto em seus buckets do Amazon S3. Quais serviços da AWS você deve usar?",
+    "options": [
+      "AWS IAM Access Analyzer",
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Sua empresa possui 40 TB de dados de backup legados armazenados em seu bucket do Amazon S3, e você precisa restaurar o sistema para uma auditoria. Qual tipo de trabalho do Snowball Edge é mais apropriado para atender aos requisitos?",
+    "options": [
+      "Local Compute and Storage Only Jobs",
+      "Isso não pode ser feito com Snowball. O dispositivo Snowball tem um limite de até 10 TB.",
+      "Importing Jobs into Amazon S3",
+      "Exporting Jobs from Amazon S3"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Como Desenvolvedor de Nuvem, você precisa escolher entre armazenamentos de instância Amazon EC2 e volumes Amazon EBS. Qual é a principal diferença entre esses serviços?",
+    "options": [
+      "Armazenamentos de instância são efêmeros, volumes Amazon EBS são persistentes.",
+      "Armazenamentos de instância têm maior latência ao conectar a instâncias EC2, volumes Amazon EBS têm menor latência ao conectar a instâncias EC2.",
+      "Armazenamentos de instância são persistentes, volumes Amazon EBS são efêmeros.",
+      "Armazenamentos de instância estão disponíveis apenas em opções SSD, volumes Amazon EBS estão disponíveis em opções SSD e HDD."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Sua função Lambda precisa acessar um banco de dados usando uma string de conexão e uma senha rotacionada regularmente. Esses itens devem ser armazenados com segurança e não podem ser codificados dentro do aplicativo. Qual dos seguintes serviços da AWS pode ajudar a realizar isso?",
+    "options": [
+      "Amazon GuardDuty",
+      "Amazon Cognito",
+      "AWS CloudTrail",
+      "AWS Key Management Service (KMS)"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual serviço permite que você envie notificações com base em seus logs do AWS CloudTrail?",
+    "options": [
+      "AWS IAM Access Analyzer",
+      "Amazon Simple Notification Service (SNS)",
+      "Amazon Kinesis Data Firehose",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Quais dispositivos da AWS Snow Family você pode escolher para um aplicativo de borda que requer clustering de dispositivos? (Selecione DOIS.)",
+    "options": [
+      "AWS Snowball Edge Storage Optimized",
+      "AWS Snowball Edge Compute Optimized",
+      "AWS Snowcone",
+      "AWS Snowmobile"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Sua empresa precisa de uma solução para relatórios empresariais e cargas de trabalho de business intelligence, particularmente aquelas envolvendo SQL extremamente complexo com múltiplas junções e subconsultas com alto desempenho de consulta. Qual serviço da AWS você deve usar?",
+    "options": [
+      "Amazon Athena",
+      "Amazon Redshift",
+      "Amazon RDS",
+      "Amazon EMR"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS oferece um nível de administração que mais se assemelha à maneira como você executa servidores físicos em seu próprio data center local?",
+    "options": [
+      "Amazon Elastic Compute Cloud (EC2)",
+      "AWS Elastic Beanstalk",
+      "Amazon Lightsail",
+      "Amazon Elastic Container Service (ECS)"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes soluções oferece a capacidade de administrar projetos a partir de uma linha de comando baseada em navegador?",
+    "options": [
+      "AWS Command Line Interface (CLI)",
+      "Cloud9",
+      "AWS CloudHSM",
+      "AWS Identity and Access Management (IAM)"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como Desenvolvedor de Nuvem, você precisa predefinir a configuração de instâncias EC2 que planeja iniciar manualmente e usando Auto Scaling. Você quer ter a capacidade de editar essa configuração no futuro. O que você deve fazer?",
+    "options": [
+      "Você deve usar launch configuration.",
+      "Você não pode ter um único modelo para iniciar instâncias manualmente e com EC2 Auto Scaling.",
+      "Você deve usar template do CloudFormation.",
+      "Você deve usar launch template."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Para executar atualizações periódicas de recursos em seu ambiente de nuvem AWS, você precisa escrever alguns scripts automáticos. Quais ferramentas você pode instalar em seus próprios computadores para executar esses scripts?",
+    "options": [
+      "AWS SDK",
+      "AWS Management Console",
+      "AWS Console Mobile Application",
+      "AWS Cloud9"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Selecione serviços de computação da AWS onde os usuários não precisam se preocupar com o gerenciamento de infraestrutura. (Selecione TRÊS.)",
+    "options": [
+      "AWS Lambda",
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "AWS Fargate"
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Uma Amazon Machine Image (AMI) inclui o seguinte: (Selecione DOIS.)",
+    "options": [
+      "Um ou mais snapshots do Amazon EBS, ou, para AMIs com armazenamento de instância, um modelo para o volume raiz da instância.",
+      "Permissões de inicialização que controlam quais contas da AWS podem usar a AMI para iniciar instâncias.",
+      "Uma definição de tipo de instância.",
+      "Uma configuração de rede."
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você é responsável por preparar uma arquitetura de nuvem para um novo aplicativo de mídia social. Você quer armazenar imagens em um bucket do Amazon S3 que serão recuperadas com pouca frequência, mas devem estar disponíveis para recuperação imediata. Qual é a classe de armazenamento mais econômica para seu aplicativo?",
+    "options": [
+      "S3 Glacier Flexible Retrieval",
+      "S3 Standard",
+      "S3 Glacier Deep Archive",
+      "S3 Standard-IA"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Sua equipe de desenvolvimento quer executar consultas ad-hoc para dados no S3 sem a necessidade de configurar ou gerenciar servidores usando Amazon Athena. Quais formatos de dados o Amazon Athena suporta? (Selecione QUATRO.)",
+    "options": [
+      "SAS",
+      "CSV",
+      "Apache Parquet",
+      "TSV",
+      "JSON",
+      "HTML"
+    ],
+    "correctAnswers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Qual recurso do Amazon S3 permite que você defina regras para transferir automaticamente objetos entre diferentes classes de armazenamento em intervalos específicos?",
+    "options": [
+      "Same-Region Replication",
+      "Cross-Region Replication",
+      "S3 Storage Lens",
+      "Object Lifecycle Management"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Como Desenvolvedor de Nuvem, você quer iniciar o Wordpress usando Amazon EC2. Onde você pode encontrar a AMI necessária para iniciar uma instância EC2?",
+    "options": [
+      "GitHub",
+      "AWS Marketplace",
+      "AWS Support Center",
+      "AWS Support Center"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma instância EC2 que é fisicamente isolada no nível de hardware do host e iniciada dentro de uma VPC é chamada...",
+    "options": [
+      "Dedicated Instance.",
+      "On-Demand Instance.",
+      "Reserved Instance.",
+      "Spot Instance."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes sentenças se aplica à escalabilidade horizontal? (Selecione DOIS.)",
+    "options": [
+      "Adicionar um disco rígido de maior capacidade ao servidor.",
+      "Adicionar discos rígidos adicionais a um array de armazenamento.",
+      "Adicionar mais instâncias EC2 através de Auto Scaling.",
+      "Alterar a instância para um tipo que tenha mais CPU e RAM."
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa de e-commerce usando a AWS Cloud tem acesso a uma variedade de tipos de dados, incluindo dados brutos e pré-processados. Eles querem começar a usar esses dados para seu pipeline de machine learning, mas também querem garantir que os dados sejam altamente disponíveis e localizados em um repositório centralizado. Como Engenheiro de Dados, qual abordagem você deve recomendar a esta empresa?",
+    "options": [
+      "Eles devem criar um data lake usando Amazon S3 como camada de armazenamento de dados.",
+      "Eles devem armazenar dados não estruturados no Amazon DynamoDB e dados estruturados no Amazon RDS.",
+      "Eles devem usar Amazon FSx for Lustre para hospedar os dados para treinamento.",
+      "Eles devem usar volumes Amazon Elastic Block Store (EBS) para armazenar os dados com backup de dados."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Quais métodos você pode usar para conceder acesso anônimo a um objeto no Amazon S3? (Selecione DOIS.)",
+    "options": [
+      "Grupos de segurança",
+      "Políticas IAM",
+      "Políticas de bucket",
+      "Access control list (ACL)"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Sua empresa habilitou a rotação automática de chaves para uma Customer Master Key (CMK) existente onde o cliente gerencia a chave de apoio. Quando a CMK é rotacionada?",
+    "options": [
+      "Após 3 anos",
+      "Após 30 dias",
+      "Após 1 mês",
+      "Após 1 ano"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Sua empresa está planejando migrar da implantação local para a AWS Cloud. Você é responsável por preparar um plano de migração. Qual serviço da AWS você deve usar para ter governança e gerenciamento central em contas da AWS?",
+    "options": [
+      "AWS Config",
+      "AWS Artifact",
+      "AWS Organizations",
+      "Amazon Cognito"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Você quer usar AWS Elastic Beanstalk para implantar e gerenciar seu aplicativo. Quais sistemas operacionais o AWS Elastic Beanstalk usa? (Selecione 2)",
+    "options": [
+      "Amazon Linux AMI",
+      "Windows Server AMI",
+      "Red Hat Enterprise Linux AMI",
+      "Ubuntu AMI"
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ]
+  },
+  {
+    "question": "Você quer implantar um aplicativo e usar balanceador de carga para distribuir tráfego. Você quer organizar seu aplicativo como serviços menores e rotear solicitações para o serviço correto com base no conteúdo da URL. Qual tipo de AWS Elastic Load Balancer deve ser usado se você quiser configurar regras para seu listener que encaminham solicitações com base na URL?",
+    "options": [
+      "Gateway Load Balancers (GLB)",
+      "Application Load Balancer (ALB)",
+      "Network Load Balancer (NLB)",
+      "Classic Load Balancer (CLB)"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Como Arquiteto de Nuvem, você frequentemente precisa planejar a capacidade de suas soluções. Quais serviços da AWS você pode usar que requerem decisões de capacidade antecipadas? (Selecione TRÊS.)",
+    "options": [
+      "Amazon S3",
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon EMR",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Como o AWS CodeCommit é diferente de outros sistemas de controle de origem baseados em Git? (Selecione DOIS.)",
+    "options": [
+      "Com AWS CodeCommit, você pode criar apenas 10 repositórios por conta.",
+      "AWS CodeCommit criptografa automaticamente seus arquivos em trânsito e em repouso.",
+      "AWS CodeCommit é um serviço totalmente gerenciado. Ele elimina a necessidade de hospedar, manter, fazer backup e escalar seus próprios servidores de controle de origem.",
+      "AWS CodeCommit tem um limite de tamanho de repositório."
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes recursos do Amazon RDS pode prevenir perda de dados no caso de uma falha de Availability Zone? (Selecione DOIS.)",
+    "options": [
+      "Snapshots",
+      "Read replicas",
+      "Escalabilidade vertical",
+      "Multi-AZ Deployment"
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Quais dos seguintes são recursos do Lambda que suportam desenvolvimento sem servidor? (Selecione TRÊS.)",
+    "options": [
+      "AWS Lambda permite que você execute código sem provisionar ou gerenciar servidores.",
+      "Não há necessidade de configurar memória ou CPU para funções Lambda.",
+      "AWS Lambda escala automaticamente.",
+      "Funções AWS Lambda são acionadas em seu nome em resposta a eventos."
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ]
+  },
+  {
+    "question": "O que você pode escalar com AWS Auto Scaling? (Selecione TRÊS.)",
+    "options": [
+      "Tópicos Amazon SNS",
+      "Funções AWS Lambda",
+      "Serviços Amazon Elastic Container Service (ECS)",
+      "Grupos Amazon EC2 Auto Scaling",
+      "Capacidade de throughput do Amazon DynamoDB"
+    ],
+    "correctAnswers": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "question": "Quais serviços da AWS podem ajudá-lo a implantar aplicativos web? (Selecione DOIS.)",
+    "options": [
+      "Amazon WorkSpaces",
+      "Amazon Lightsail",
+      "AWS Lambda",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      1,
+      3
+    ]
+  },
+  {
+    "question": "Amazon EC2 Auto Scaling fornece várias maneiras de ajustar a escalabilidade para melhor atender às necessidades de seus aplicativos. Qual das seguintes opções de escalabilidade é apropriada para uma carga de trabalho imprevisível? (Selecione DOIS.)",
+    "options": [
+      "Escalabilidade manual",
+      "Escalabilidade baseada em agendamento",
+      "Escalabilidade preditiva",
+      "Escalabilidade baseada em demanda"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS é projetado para implantar contêineres Docker?",
+    "options": [
+      "Amazon Elastic Container Service (ECS)",
+      "Amazon Elastic Compute Cloud (EC2)",
+      "Amazon Lightsail",
+      "AWS Batch"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "A AWS tem planos de suporte para clientes. Qual plano de suporte é o mais avançado?",
+    "options": [
+      "Business",
+      "Developer",
+      "Enterprise On-Ramp",
+      "Enterprise"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Selecione todos os benefícios da computação em lote (usando AWS Batch). (Selecione TRÊS.)",
+    "options": [
+      "Você pode mudar o tempo de processamento de trabalhos para períodos em que maior ou menor capacidade cara está disponível.",
+      "A computação em lote pode evitar recursos de computação ociosos com intervenção e supervisão manual frequente.",
+      "Permite a priorização de trabalhos, alinhando a alocação de recursos com objetivos de negócios.",
+      "Aumenta os custos."
+    ],
+    "correctAnswers": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Como desenvolvedor em nuvem, você implantou um aplicativo web e precisa filtrar tráfego web malicioso. Qual serviço da AWS você deve usar?",
+    "options": [
+      "AWS Shield",
+      "Amazon Macie",
+      "AWS Web Application Firewall (WAF)",
+      "AWS Firewall Manager"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Simulados AWS</string>
+    <string name="pausar">PAUSAR</string>
+    <string name="_1_40_pergunta_de_exemplo">1/40 - Pergunta de exemplo</string>
+    <string name="n_mero_de_quest_es">Número de questões</string>
+    <string name="aws_cloud_practitioner_simulado">AWS Cloud Practitioner</string>
+    <string name="reiniciar_simulado">Reiniciar Simulado</string>
+    <string name="proxima">PRÓXIMA</string>
+    <string name="finalizar">FINALIZAR</string>
+    <string name="iniciar_simulado">INICIAR</string>
+    <string name="simulado">Simulado</string>
+    <string name="simulado_02">Simulado 02</string>
+    <string name="simulado_01">Simulado 01</string>
+    <string name="revis_o_do_simulado">Revisão do Simulado</string>
+    <string name="revisar_simulado">Revisar Simulado</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="op_1">Opção 1</string>
+    <string name="op_2">Opção 2</string>
+    <string name="op_3">Opção 3</string>
+    <string name="op_4">Opção 4</string>
+    <string name="op_5">Opção 5</string>
+    <string name="simulado_03">Simulado 03</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F3F4F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:clipToPadding="false"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="@string/aws_cloud_practitioner_simulado"
+            android:textColor="#111111"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Scroll area that contains only the cards -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Simulado 1 card -->
+                <include
+                    android:id="@+id/cardSimulado1"
+                    layout="@layout/item_simulado_card" />
+
+                <!-- Simulado 2 card -->
+                <include
+                    android:id="@+id/cardSimulado2"
+                    layout="@layout/item_simulado_card_2" />
+
+                <!-- Simulado 3 card -->
+                <include
+                    android:id="@+id/cardSimulado3"
+                    layout="@layout/item_simulado_card_3" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+    
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,800 @@
+[
+  {
+    "question": "Uma empresa planeja migrar suas VMs locais para a AWS. Para coordenar essa migração em larga escala, ela precisa encontrar uma maneira de automatizar, agendar e monitorar todo o processo.",
+    "options": [
+      "Utilize o Amazon CloudWatch para monitorar o processo de migração.",
+      "Utilize o AWS Database Migration Service para migrar cargas de trabalho locais para a AWS.",
+      "Use o AWS Migration Hub para acompanhar o progresso das migrações.",
+      "Utilize o AWS Application Migration Service para migrar cargas de trabalho locais para a AWS."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Se você precisa criar um site WordPress leve na AWS sem ter que instalar o pacote por conta própria, qual solução PaaS na AWS permitirá que você faça isso facilmente?",
+    "options": [
+      "Amazon GameLift",
+      "AWS Glue",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS fornece uma ferramenta de gerenciamento de segurança que pode ser usada para configurar suas regras do AWS WAF em diferentes contas da AWS?",
+    "options": [
+      "Amazon GuardDuty",
+      "AWS Trusted Advisor",
+      "AWS Firewall Manager",
+      "AWS Resource Access Manager"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções você deve configurar para conectar sua rede VPC da AWS à sua rede local por meio de um túnel IPsec?",
+    "options": [
+      "Um gateway VPN em sua VPC conectado ao Gateway do Cliente em sua rede local.",
+      "Um gateway NAT em sua sub-rede privada conectado à sua rede local.",
+      "Conexão de peering VPC entre sua rede local e a VPC.",
+      "Um dispositivo de gateway NAT local conectado ao gateway de Internet da sua VPC."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual a diferença entre uma Zona de Disponibilidade e uma Zona Local?",
+    "options": [
+      "Uma Zona de Disponibilidade é uma extensão de uma Região da AWS localizada geograficamente próxima aos seus usuários. Uma Zona Local é uma localização isolada dentro de uma região da AWS.",
+      "Uma Zona de Disponibilidade entrega conteúdo em cache para o local mais próximo, reduzindo a latência para os usuários. Uma Zona Local é uma extensão de uma Região da AWS localizada geograficamente próxima aos seus usuários.",
+      "Uma Zona de Disponibilidade é uma localização isolada dentro de uma região da AWS. Uma Zona Local é uma extensão de uma região da AWS geograficamente próxima dos seus usuários.",
+      "Uma Zona de Disponibilidade é uma área geográfica separada. Uma Zona Local entrega conteúdo em cache para o local mais próximo, reduzindo a latência para os usuários."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços oferece a mesma infraestrutura de hardware, serviços, APIs e ferramentas da AWS para criar e executar seus aplicativos localmente e na nuvem?",
+    "options": [
+      "AWS Wavelength",
+      "AWS Lambda",
+      "AWS Organizations",
+      "AWS Outposts"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços poderá redirecionar o tráfego para suas instâncias EC2 secundárias em outra região durante a recuperação de desastres?",
+    "options": [
+      "Amazon VPC",
+      "Amazon Route 53",
+      "VPC Peering",
+      "AWS ELB"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Devido ao grande número de visitantes, muitos clientes estão sofrendo timeouts ao acessar seu site, que está hospedado em um grupo de Auto Scaling de instâncias EC2 atrás de um ELB. Ao verificar, constatou-se que o grupo de Auto Scaling parou de adicionar novas instâncias. Qual das seguintes categorias do Trusted Advisor fornecerá mais informações sobre esse problema? (Selecione DUAS.)",
+    "options": [
+      "Segurança",
+      "Desempenho",
+      "Tolerância a falhas",
+      "Otimização de custos",
+      "Limites de serviço"
+    ],
+    "correctAnswers": [
+      1,
+      4
+    ]
+  },
+  {
+    "question": "Uma empresa deseja garantir que seus funcionários possam encontrar e implantar facilmente serviços de TI aprovados na AWS para manter a conformidade com as políticas organizacionais.",
+    "options": [
+      "AWS CloudTrail",
+      "AWS Lambda",
+      "AWS Service Catalog",
+      "AWS CloudFormation"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções ajuda os arquitetos de nuvem a construir infraestrutura segura, de alto desempenho, resiliente e eficiente para seus aplicativos, com base nos seis pilares?",
+    "options": [
+      "AWS Well-Architected Framework",
+      "AWS Cloud Adoption Framework",
+      "AWS Serverless Application Model",
+      "AWS Security Hub"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS pode ser usado para transformar texto em fala realista, permitindo que você crie aplicativos que falam e execute produtos habilitados para voz?",
+    "options": [
+      "Amazon Lex",
+      "Amazon Transcribe",
+      "Amazon Alexa",
+      "Amazon Polly"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes controles o cliente herda integralmente da AWS com base no Modelo de Responsabilidade Compartilhada?",
+    "options": [
+      "Gerenciamento de patches",
+      "Controles físicos e ambientais",
+      "Gerenciamento de Configuração",
+      "Conscientização e Treinamento"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Quais dos seguintes recursos de segurança podem ser ativados no Amazon WorkSpaces para garantir a conformidade com as regulamentações e proteger dados confidenciais?",
+    "options": [
+      "Permitir que os funcionários usem seus dispositivos pessoais para o trabalho.",
+      "Armazenar dados sensíveis de forma não criptografada no espaço de trabalho.",
+      "Desativar firewalls e softwares antivírus no ambiente de trabalho para melhor desempenho.",
+      "Habilitar a autenticação multifator para acesso de usuários aos espaços de trabalho."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS conta com o suporte de uma equipe dedicada da AWS focada em gerenciamento de infraestrutura para auxiliar empresas na adoção em larga escala da nuvem?",
+    "options": [
+      "APN Consulting Partner",
+      "APN Technology Partner",
+      "AWS IQ",
+      "AWS Managed Services"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes afirmações sobre o Relatório de Credenciais do AWS IAM é verdadeira?",
+    "options": [
+      "O Relatório de Credenciais do IAM contém informações detalhadas sobre o uso de usuários e funções do IAM.",
+      "O Relatório de Credenciais do IAM fornece informações em tempo real sobre a utilização dos serviços da AWS.",
+      "O Relatório de Credenciais do IAM fornece informações sobre a disponibilidade dos serviços da AWS.",
+      "Somente usuários do IAM podem acessar o Relatório de Credenciais do IAM, que contém informações detalhadas sobre o uso de usuários e funções do IAM."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Quais dos seguintes são casos de uso válidos suportados pelo Amazon CloudFront? (Selecione DOIS.)",
+    "options": [
+      "Conversão de esquema",
+      "Transmissão de vídeo ao vivo e sob demanda",
+      "Cópias de segurança automatizadas",
+      "Consulta interativa sem servidor",
+      "Armazenamento em cache de recursos estáticos"
+    ],
+    "correctAnswers": [
+      1,
+      4
+    ]
+  },
+  {
+    "question": "Quais são os benefícios que a nuvem AWS oferece em termos de elasticidade em comparação com as implementações locais?",
+    "options": [
+      "Maior controle sobre o hardware",
+      "Escalabilidade facilitada",
+      "Menores despesas com infraestrutura",
+      "Segurança reforçada"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma cliente deseja enviar notificações push para seus usuários de dispositivos móveis sempre que uma nova atualização for lançada. Qual serviço é o mais apropriado para essa tarefa?",
+    "options": [
+      "Amazon SQS",
+      "Amazon SNS",
+      "AWS Application Migration Service",
+      "Amazon SES"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS utiliza uma localização de borda global? (Selecione DOIS.)",
+    "options": [
+      "Amazon VPC",
+      "Amazon Route 53",
+      "AWS Global Accelerator",
+      "AWS Direct Connect",
+      "AWS Transit Gateway"
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
+  },
+  {
+    "question": "Um cliente deseja executar sua aplicação na nuvem por meio de instâncias EC2. Seu código está atualmente armazenado no GitHub. Qual ferramenta ele poderia usar para executar seu código nas instâncias EC2?",
+    "options": [
+      "AWS CloudFormation",
+      "AWS CodeCommit",
+      "Amazon Kinesis",
+      "AWS CodeDeploy"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções representa um benefício de usar o Amazon Cognito para autenticação e autorização de usuários em um aplicativo web?",
+    "options": [
+      "O Amazon Cognito exige que os desenvolvedores gerenciem grupos de usuários e provedores de identidade.",
+      "O Amazon Cognito oferece uma interface de usuário integrada para login e cadastro.",
+      "O Amazon Cognito só pode autenticar usuários que possuem contas da Amazon.",
+      "O Amazon Cognito é adequado apenas para aplicações de pequena escala com um número limitado de usuários."
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços da AWS pode ajudar você a automatizar e simplificar o processo de transferência de dados entre sistemas de armazenamento locais e serviços de armazenamento da AWS?",
+    "options": [
+      "AWS Transfer Family",
+      "AWS DataSync",
+      "AWS Direct Connect",
+      "AWS Storage Gateway"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Que serviço permitirá que você venda seu catálogo de AMIs personalizadas na AWS?",
+    "options": [
+      "Amazon Mechanical Turk",
+      "Amazon CloudSearch",
+      "AWS Marketplace",
+      "AWS Service Catalog"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções permite criar e implantar modelos de infraestrutura como código na AWS?",
+    "options": [
+      "AWS CloudFormation",
+      "AWS Elastic Beanstalk",
+      "AWS Systems Manager",
+      "Amazon Lightsail"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Uma empresa planeja configurar uma conexão privada na Amazon VPC para distribuir tráfego para uma frota de appliances virtuais na AWS. Qual dos seguintes serviços da AWS atende a esse requisito?",
+    "options": [
+      "AWS PrivateLink",
+      "AWS Direct Connect",
+      "AWS Transit Gateway",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual serviço você deve usar se precisar lançar um banco de dados personalizado e auto-hospedado que exija um desligamento programado todas as noites para economizar custos?",
+    "options": [
+      "Instância do Amazon EC2 com um volume do Instance Store",
+      "Instância do Amazon EC2 com um volume EBS",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual é o principal benefício de criar um sistema escalável?",
+    "options": [
+      "Os aplicativos não são alvos fáceis para ataques maliciosos.",
+      "Os aplicativos são capazes de realizar failover de forma controlada.",
+      "Os aplicativos são capazes de lidar com diferentes volumes de trabalho.",
+      "Os recursos do aplicativo custarão menos do que o normal."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é de responsabilidade da empresa ao migrar um aplicativo da infraestrutura local para a nuvem da AWS?",
+    "options": [
+      "Aplicação de patches nos sistemas operacionais do host e do convidado.",
+      "Configuração da segurança física do centro de dados.",
+      "Manutenção e segurança da infraestrutura subjacente.",
+      "Gerenciamento de licenças de software."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma organização precisa usar um serviço de processamento de linguagem natural para encontrar insights e relações em artigos submetidos. Qual dos seguintes serviços pode atender a esse requisito?",
+    "options": [
+      "Amazon WorkDocs",
+      "Amazon Textract",
+      "Amazon CloudWatch",
+      "Amazon Comprehend"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa possui uma grande quantidade de dados armazenados localmente e deseja migrá-los para a nuvem. Ela precisa de um serviço que permita armazenar e recuperar seus dados rapidamente, ofereça durabilidade e seja econômico. Qual serviço da AWS seria o mais adequado para essa necessidade?",
+    "options": [
+      "Amazon Glacier",
+      "AWS Storage Gateway",
+      "Amazon S3",
+      "Amazon EFS"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Onde posso acompanhar os custos que já incorri em minha conta da AWS por meio de uma visualização gráfica?",
+    "options": [
+      "AWS Budgets",
+      "AWS Cost and Usage Reports",
+      "AWS Consolidated Billing",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual serviço permite agrupar usuários que desempenham funções semelhantes e aplicar privilégios específicos para cada função?",
+    "options": [
+      "Tagging",
+      "Directory Service",
+      "AWS IAM",
+      "Resource Groups"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Sabe-se que um banco de dados MariaDB RDS apresenta alto consumo de memória durante os horários de pico, o que deteriora o desempenho geral da sua aplicação. Que alteração de baixo custo você pode implementar para resolver esse problema, considerando que o banco de dados realiza operações de escrita intensivas?",
+    "options": [
+      "Aumente a escala vertical da instância para uma capacidade de memória maior.",
+      "Mude para o Amazon DynamoDB para desfrutar de latência de milissegundos.",
+      "Distribua a carga de trabalho executando várias instâncias.",
+      "Adicione réplicas de leitura para reduzir a carga das operações de leitura."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Quais das seguintes opções são funcionalidades que o Amazon CloudWatch Logs pode executar? (Selecione DUAS.)",
+    "options": [
+      "Armazene seus dados de registro totalmente grátis.",
+      "Ajuste a política de retenção para cada grupo de logs.",
+      "Crie alarmes que interrompam, encerrem, reiniciem ou recuperem automaticamente suas instâncias EC2.",
+      "Monitore os logs de aplicativos das instâncias do Amazon EC2.",
+      "Registre as ações do AWS Management Console e as chamadas de API."
+    ],
+    "correctAnswers": [
+      1,
+      3
+    ]
+  },
+  {
+    "question": "Uma organização planeja implementar uma arquitetura de aplicativos de alta disponibilidade na AWS. Qual das seguintes opções atende a esse requisito?",
+    "options": [
+      "Aumente a capacidade do servidor de aplicativos.",
+      "Configure várias nuvens privadas virtuais.",
+      "Adquira uma instância reservada no mercado.",
+      "Distribua grupos de escalonamento automático por várias Zonas de Disponibilidade."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma startup utiliza apenas o plano de Suporte Básico da AWS e não tem condições de migrar para um plano superior no momento. Ela precisa de assistência técnica da AWS para entender melhor o comportamento de seus serviços. Qual das seguintes opções pode ser uma fonte de assistência técnica para essa startup?",
+    "options": [
+      "AWS Personal Support",
+      "AWS Discussion Forums",
+      "AWS Technical Account Manager",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual serviço permite enviar, armazenar e receber mensagens entre componentes de software em qualquer volume, sem perda de mensagens ou necessidade de outros serviços?",
+    "options": [
+      "Amazon S3",
+      "Amazon Route 53",
+      "Amazon SQS",
+      "Amazon SES"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços simplifica as operações do contact center, melhora a eficiência dos agentes, reduz custos e pode ser dimensionado para suportar milhões de clientes?",
+    "options": [
+      "Amazon WorkSpaces",
+      "AWS Direct Connect",
+      "Amazon Connect",
+      "Amazon Lex"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "A agilidade é um dos benefícios da computação em nuvem que proporciona qual vantagem ao cliente?",
+    "options": [
+      "Evite o dimensionamento excessivo da sua infraestrutura para garantir que você tenha capacidade suficiente para lidar com as operações da sua empresa no nível máximo de atividade.",
+      "Implante facilmente seu aplicativo em vários locais físicos ao redor do mundo com apenas alguns cliques.",
+      "Permite trocar despesas de capital por despesas variáveis.",
+      "Concentre seus valiosos recursos de TI no desenvolvimento de aplicativos que diferenciem seu negócio, em vez de gerenciar infraestrutura e centros de dados."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual serviço uma empresa deve usar para gerenciar centralmente as políticas de contas e consolidar a cobrança em várias contas da AWS?",
+    "options": [
+      "AWS Cost Explorer",
+      "AWS Trusted Advisor",
+      "AWS Budgets",
+      "AWS Organizations"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Um cliente precisa acessar uma ampla gama de serviços da AWS por meio de uma interface de usuário intuitiva baseada na web. Qual das seguintes opções você recomendaria?",
+    "options": [
+      "AWS Management Console",
+      "AWS CLI",
+      "Bastion Host",
+      "AWS SDK"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual dos seguintes recursos de gerenciamento de custos da AWS usa aprendizado de máquina para monitorar continuamente custos e uso, a fim de detectar gastos incomuns?",
+    "options": [
+      "AWS Cost Anomaly Detection",
+      "AWS Budgets",
+      "AWS Cost Categories",
+      "AWS Cost Explorer"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções descreve com precisão as características dos endpoints VPC? (Escolha duas).",
+    "options": [
+      "Os endpoints da VPC aplicam criptografia automaticamente à conexão para maior segurança.",
+      "Os endpoints de VPC fornecem uma conexão segura e privada entre uma VPC e os serviços da AWS compatíveis.",
+      "Os endpoints VPC permitem a conexão pública de aplicativos sem a necessidade de endereços IP públicos.",
+      "Os endpoints de VPC permitem conexões privadas entre uma VPC e um ambiente local.",
+      "Os endpoints de VPC eliminam a necessidade de gateways de internet e NAT ao acessar serviços da AWS de forma privada dentro de uma VPC."
+    ],
+    "correctAnswers": [
+      1,
+      4
+    ]
+  },
+  {
+    "question": "Quais dos seguintes serviços de banco de dados são oferecidos pela AWS e são adequados para gerenciar dados altamente conectados, como grafos de redes sociais, mecanismos de recomendação e detecção de fraudes? (Selecione DOIS).",
+    "options": [
+      "Amazon DocumentDB (com compatibilidade com MongoDB)",
+      "Amazon Aurora",
+      "Amazon RDS",
+      "Amazon MemoryDB para Redis",
+      "Amazon Neptune"
+    ],
+    "correctAnswers": [
+      0,
+      4
+    ]
+  },
+  {
+    "question": "Se você estiver usando o plano de Suporte Empresarial, quem é o seu ponto de contato técnico designado que fornece toda a expertise necessária da AWS para manter um ambiente AWS operacionalmente saudável?",
+    "options": [
+      "AWS Systems Manager",
+      "Technical Account Manager (TAM)",
+      "Operations Support",
+      "Concierge Support"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma empresa de jogos precisa de um serviço que utilize a rede global da AWS para otimizar a velocidade de acesso dos usuários aos seus aplicativos por meio de um endereço IP estático anycast. Qual dos seguintes serviços atende a esse critério?",
+    "options": [
+      "Amazon Route 53",
+      "Amazon ElastiCache",
+      "AWS Global Accelerator",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual serviço você usará para transferir centenas de petabytes de dados para a AWS de forma rápida e segura?",
+    "options": [
+      "AWS Snowmobile",
+      "AWS Data Exchange",
+      "AWS Snowball Edge",
+      "AWS Data Pipeline"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Um desenvolvedor precisa acessar uma instância EC2 Linux para modificar um arquivo de configuração do WordPress. Quais dos seguintes métodos permitem que ele se conecte ao terminal Linux da sua instância? (Selecione DOIS.)",
+    "options": [
+      "Session Manager",
+      "AWS Direct Connect",
+      "VPC Peering",
+      "User Data",
+      "EC2 Instance Connect"
+    ],
+    "correctAnswers": [
+      0,
+      4
+    ]
+  },
+  {
+    "question": "Um cliente precisa organizar e consolidar informações com base em critérios especificados em tags ou recursos na AWS. Qual dos seguintes serviços você recomendaria para atender a esse requisito?",
+    "options": [
+      "AWS IAM Group",
+      "AWS CloudTrail",
+      "AWS Resource Groups",
+      "AWS Directory Service"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços protege suas aplicações web contra ataques na camada de aplicação, como injeção de SQL e cross-site scripting?",
+    "options": [
+      "Network Access Control List",
+      "Security Group",
+      "AWS Shield",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "O dimensionamento automático baseado na demanda é uma implementação de qual prática recomendada da nuvem AWS?",
+    "options": [
+      "Implementar elasticidade.",
+      "Design para a perfeição.",
+      "Impulsione arquiteturas usando dados.",
+      "Projete para falhar."
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes vantagens da computação em nuvem descreve a redução contínua de preços dos serviços da AWS?",
+    "options": [
+      "Pare de adivinhar a capacidade",
+      "Pare de gastar dinheiro operando e mantendo data centers.",
+      "Despesas de capital comercial por despesas variáveis",
+      "Aproveite as enormes economias de escala."
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Uma empresa planeja migrar seus aplicativos e cargas de trabalho locais para a AWS. Ela precisa se transformar digitalmente e acelerar seus resultados de negócios, aproveitando a experiência e as melhores práticas da AWS para otimizar esses resultados. Qual das seguintes opções pode ser usada para acelerar a transformação digital da empresa rumo à nuvem?",
+    "options": [
+      "AWS Managed Services",
+      "AWS Control Tower",
+      "AWS Cloud Adoption Framework",
+      "AWS Professional Services"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa planeja usar um serviço de streaming de aplicativos para dar aos seus funcionários acesso instantâneo aos seus aplicativos de desktop a partir de qualquer dispositivo. Qual dos seguintes serviços atende a esse requisito?",
+    "options": [
+      "Amazon WorkSpaces",
+      "Amazon AppStream 2.0",
+      "Amazon Kinesis Data Streams",
+      "AWS AppSync"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções representa uma vantagem de usar serviços gerenciados como RDS, ElastiCache e CloudSearch na AWS?",
+    "options": [
+      "Dimensiona automaticamente a capacidade sem qualquer intervenção do cliente.",
+      "Libera o cliente da tarefa de escolher e otimizar o tipo e o tamanho da instância subjacente do serviço.",
+      "Simplifica todas as suas atividades de atualização e backup do sistema operacional para ajudar a manter seus recursos atualizados e seguros.",
+      "Desempenho superior ao de serviços gerenciados pelo cliente, como instâncias EC2."
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é um serviço de armazenamento híbrido da AWS que permite conectar seu armazenamento de dados local ao Amazon S3 e simplificar o gerenciamento de armazenamento?",
+    "options": [
+      "Amazon S3 Gateway Endpoint",
+      "AWS Direct Connect",
+      "AWS Storage Gateway",
+      "Internet Gateway"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Uma empresa busca uma solução de computação em nuvem para atender às suas necessidades de negócios, necessitando de uma instância computacional sem compromisso de longo prazo. Qual das seguintes opções de computação em nuvem seria a mais adequada?",
+    "options": [
+      "Servidores Dedicados e Instâncias Reservadas",
+      "Apenas servidores dedicados",
+      "Instâncias sob demanda e instâncias reservadas",
+      "Instâncias somente sob demanda"
+    ],
+    "correctAnswers": [
+      3
+    ]
+  },
+  {
+    "question": "Qual dos seguintes tipos de escalonamento pode prever o tráfego futuro do seu aplicativo para ajudar você a agendar e provisionar o número correto de instâncias EC2 com antecedência?",
+    "options": [
+      "Escalonamento preditivo",
+      "Dimensionamento do rastreamento de alvos",
+      "Dimensionamento programado",
+      "Dimensionamento simples"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual dos seguintes serviços de entrega contínua você deve usar para automatizar seus pipelines de lançamento e obter atualizações rápidas e confiáveis ​​de aplicativos e infraestrutura?",
+    "options": [
+      "AWS CodeDeploy",
+      "AWS CodePipeline",
+      "AWS CodeCommit",
+      "Amazon Data Pipeline"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma organização hospedou sua aplicação em várias instâncias do Amazon EC2. Para determinar se o tráfego chega às instâncias, ela precisa capturar o tráfego IP de entrada e saída das interfaces de rede. Qual dos seguintes serviços ela deve usar?",
+    "options": [
+      "VPC Flow Logs",
+      "Amazon Inspector",
+      "Amazon Athena",
+      "Interface VPC Endpoint"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Um cliente deseja reforçar a segurança de sua rede além dos grupos de segurança e das listas de controle de acesso à rede. Quais dos serviços abaixo podem ser usados ​​para fornecer esses recursos de segurança adicionais? (Selecione DOIS.)",
+    "options": [
+      "Amazon GuardDuty",
+      "AWS Identity and Access Management",
+      "AWS IAM Identity Center",
+      "AWS WAF",
+      "AWS Key Management Service"
+    ],
+    "correctAnswers": [
+      0,
+      3
+    ]
+  },
+  {
+    "question": "Uma startup planeja hospedar um aplicativo em uma instância do Amazon EC2. As sub-redes da VPC possuem ACLs de rede personalizadas para garantir que apenas o tráfego autorizado tenha acesso ao aplicativo. Quais das seguintes opções são características das ACLs de rede? (Selecione DUAS.)",
+    "options": [
+      "As NACLs podem estar associadas a múltiplas instâncias.",
+      "As ACLs de rede permitem apenas regras de entrada.",
+      "As NACLs não possuem estado.",
+      "As ACLs de rede permitem regras tanto de entrada quanto de saída.",
+      "As NACLs mantêm estado."
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
+  },
+  {
+    "question": "A Tutorials Dojo gostaria de testar seu novo aplicativo móvel em vários dispositivos simultaneamente e de forma coordenada usando a AWS. Qual dos seguintes serviços ajudará a acelerar o processo?",
+    "options": [
+      "AWS Security Bulletin",
+      "AWS Ground Station",
+      "AWS Device Farm",
+      "Amazon QuickSight"
+    ],
+    "correctAnswers": [
+      2
+    ]
+  },
+  {
+    "question": "Qual o melhor lugar para arquivar registros e outros arquivos acessados ​​com pouca frequência por um longo período de tempo?",
+    "options": [
+      "Amazon S3 Standard-IA",
+      "Amazon S3 Glacier Flexible Retrieval",
+      "Amazon EBS",
+      "AWS Storage Gateway"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  },
+  {
+    "question": "Uma empresa está migrando para a nuvem da AWS e deseja garantir uma transição tranquila que considere o impacto sobre os funcionários. Qual perspectiva do AWS Cloud Adoption Framework (AWS CAF) estabelece uma conexão entre tecnologia e negócios, priorizando as necessidades da força de trabalho?",
+    "options": [
+      "Perspectiva Operacional",
+      "Perspectiva das pessoas",
+      "Perspectiva de Governança",
+      "Perspectiva de Segurança"
+    ],
+    "correctAnswers": [
+      1
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/labelCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="@string/n_mero_de_quest_es"
+        android:textColor="#111111"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCount"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="10dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Dialog.Alert"
+        android:spinnerMode="dropdown" />
+
+</LinearLayout>
