@@ -65,6 +65,17 @@ git clone git@github.com:MarceloJay/simuladosAws.git
 ./gradlew installDebug
 ```
 
+## 📦 Deploy Automático
+
+Este projeto possui CI/CD configurado com GitHub Actions para publicação automática no Google Play.
+
+Para configurar o deploy automático, consulte o arquivo [DEPLOY.md](DEPLOY.md) com instruções detalhadas.
+
+**Quick start:**
+```bash
+./scripts/setup-deploy.sh
+```
+
 ## 📂 Estrutura do Projeto
 
 ```
