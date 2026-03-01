@@ -13,10 +13,12 @@ import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.google.android.play.core.install.model.AppUpdateType;
 
 public class MainActivity extends AppCompatActivity {
 
     private Spinner spinnerGlobal;
+    private UpdateManager updateManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // enable edge-to-edge handling so we get proper system insets on Android 15+
         EdgeToEdge.enable(this);
+        
+        // Inicializar UpdateManager e verificar atualizações
+        updateManager = new UpdateManager(this);
+        updateManager.checkForUpdate(AppUpdateType.FLEXIBLE);
 
         // create a custom action bar view with icon + centered title
         if (getSupportActionBar() != null) {
@@ -363,3 +369,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        // Retomar atualização se necessário
+        if (updateManager != null) {
+            updateManager.resumeUpdateIfNeeded();
+        }
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Limpar recursos
+        if (updateManager != null) {
+            updateManager.cleanup();
+        }
+    }
