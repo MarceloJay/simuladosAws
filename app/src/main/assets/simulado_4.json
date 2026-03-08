@@ -1,16 +1,14 @@
 [
   {
-    "question": "Quais das seguintes políticas concedem as permissões necessárias para acessar seus recursos do Amazon S3? (Selecione DUAS.)",
+    "question": "Qual serviço da AWS fornece um ambiente de desenvolvimento integrado baseado em navegador?",
     "options": [
-      "Políticas de objetos",
-      "Políticas de controle de acesso à rede",
-      "Políticas de roteamento",
-      "Políticas do usuário",
-      "Políticas de balde"
+      "AWS CodeStar",
+      "AWS Cloud9",
+      "AWS CodeCommit",
+      "AWS CloudShell"
     ],
     "correctAnswers": [
-      3,
-      4
+      1
     ]
   },
   {
@@ -410,12 +408,12 @@
     ]
   },
   {
-    "question": "Qual serviço da AWS fornece proteção contra ataques DDoS?",
+    "question": "Qual das seguintes opções é um serviço de mensageria totalmente gerenciado que suporta protocolos padrão da indústria?",
     "options": [
-      "AWS WAF",
-      "AWS Shield",
-      "Amazon GuardDuty",
-      "AWS Firewall Manager"
+      "Amazon SQS",
+      "Amazon MQ",
+      "Amazon SNS",
+      "Amazon Kinesis"
     ],
     "correctAnswers": [
       1

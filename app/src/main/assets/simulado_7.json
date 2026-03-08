@@ -12,70 +12,63 @@
     ]
   },
   {
-    "question": "Sua empresa possui 6 TB de dados que precisam ser coletados, pré-processados e transferidos para o bucket do Amazon S3. Qual dispositivo da família AWS Snow ofereceria a solução mais eficiente?",
+    "question": "Qual serviço da AWS fornece um serviço de e-mail transacional escalável?",
     "options": [
-      "AWS Snowmobile",
-      "AWS Snowcone",
-      "AWS Snowball Edge - Otimizado para Computação",
-      "AWS Snowball Edge - Otimizado para armazenamento"
+      "Amazon SES",
+      "Amazon SNS",
+      "Amazon SQS",
+      "Amazon Pinpoint"
+    ],
+    "correctAnswers": [
+      0
+    ]
+  },
+  {
+    "question": "Qual das seguintes opções é um serviço de blockchain gerenciado pela AWS?",
+    "options": [
+      "Amazon QLDB",
+      "Amazon Managed Blockchain",
+      "AWS Certificate Manager",
+      "AWS KMS"
     ],
     "correctAnswers": [
       1
     ]
   },
   {
-    "question": "Como Arquiteto de Nuvem, você planeja projetar uma arquitetura fracamente acoplada. Quais dos seguintes serviços da AWS facilitam essa abordagem? (Selecione DOIS.)",
+    "question": "Qual serviço da AWS permite executar aplicações Windows e Linux em desktops virtuais?",
     "options": [
-      "Amazon CloudWatch",
-      "Elastic Load Balancing",
-      "Amazon Simple Queue Service (SQS)",
-      "AWS CloudFormation",
-      "AWS CloudTrail"
+      "Amazon WorkSpaces",
+      "Amazon AppStream 2.0",
+      "AWS WorkLink",
+      "Amazon WorkDocs"
     ],
     "correctAnswers": [
-      1,
-      2
+      0
     ]
   },
   {
-    "question": "Selecione todos os componentes que determinam o preço do seu trabalho com AWS Snowball Edge. (Selecione TRÊS.)",
+    "question": "Qual das seguintes opções é um serviço de análise de dados em tempo real?",
     "options": [
-      "Região da AWS.",
-      "Se o dispositivo for mantido por mais de dez dias, você incorre em uma taxa para cada dia adicional que mantiver o dispositivo.",
-      "Taxas de envio.",
-      "Transferência de dados por GB para o Amazon S3."
+      "Amazon Kinesis Data Analytics",
+      "Amazon Athena",
+      "AWS Glue",
+      "Amazon EMR"
     ],
     "correctAnswers": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {
-    "question": "Quais são os diferentes formatos/transportes de entrega para receber notificações com o Amazon Simple Notification Service (Amazon SNS)? (Selecione TRÊS.)",
+    "question": "Qual serviço da AWS permite criar e hospedar sites estáticos com certificados SSL gratuitos?",
     "options": [
-      "SMS - mensagens são enviadas para números de telefone registrados como mensagens de texto SMS.",
-      "HTTP, HTTPS - notificações serão entregues através de um HTTP POST para a URL especificada.",
-      "Email - mensagens são enviadas para endereços registrados como e-mail.",
-      "Chamada telefônica - mensagens são compiladas usando Amazon Polly e enviadas para números de telefone registrados como uma chamada telefônica."
+      "Amazon S3 + CloudFront",
+      "AWS Amplify",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
     ],
     "correctAnswers": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "question": "Selecione casos de uso que se encaixam bem com o Amazon Kinesis Data Streams. (Selecione DOIS.)",
-    "options": [
-      "Aplicações de streaming de mídia para dispositivos IoT habilitados para câmera",
-      "Aplicações de extração-transformação-carregamento (ETL) de streaming",
-      "Coleta de dados de log e eventos",
-      "Análise de dados em tempo real e métricas e relatórios em tempo real"
-    ],
-    "correctAnswers": [
-      2,
-      3
+      1
     ]
   },
   {
@@ -168,16 +161,15 @@
     ]
   },
   {
-    "question": "Selecione todas as afirmações verdadeiras sobre escalabilidade sem servidor. (Selecione DOIS.)",
+    "question": "Qual das seguintes opções é um serviço de migração de bancos de dados?",
     "options": [
-      "Arquitetos de aplicações não devem considerar custos ao escalar com serviços sem servidor.",
-      "Com serverless, você não precisa configurar auto-scaling porque está usando serviços gerenciados que têm escalabilidade horizontal integrada.",
-      "A computação sem servidor permite que você escale muito mais rápido do que com aplicações baseadas em servidor.",
-      "Serviços sem servidor como AWS Lambda não suportam escalabilidade."
+      "AWS Database Migration Service",
+      "AWS DataSync",
+      "AWS Transfer Family",
+      "AWS Snow Family"
     ],
     "correctAnswers": [
-      1,
-      2
+      0
     ]
   },
   {
@@ -218,28 +210,27 @@
     ]
   },
   {
-    "question": "Selecione todas as afirmações verdadeiras sobre Amazon Virtual Private Cloud (VPC). (Selecione DOIS.)",
+    "question": "Qual serviço da AWS permite criar chatbots conversacionais?",
     "options": [
-      "Amazon VPC permite que você provisione uma seção logicamente isolada da nuvem Amazon Web Services (AWS) onde você pode executar recursos da AWS em uma rede virtual que você define.",
-      "Você tem controle completo sobre seu ambiente de rede virtual, incluindo seleção de suas próprias faixas de endereços IP, criação de sub-redes e configuração de tabelas de roteamento e gateways de rede.",
-      "Você não pode estabelecer uma conexão entre sua rede local e Amazon VPC.",
-      "Você não pode criar uma sub-rede voltada para o público para seus servidores web que tenham acesso à Internet."
+      "Amazon Lex",
+      "Amazon Polly",
+      "Amazon Transcribe",
+      "Amazon Comprehend"
     ],
     "correctAnswers": [
-      0,
-      1
+      0
     ]
   },
   {
-    "question": "Você quer hospedar um site estático com bucket do Amazon S3 e registrar um novo domínio. Qual serviço da AWS você deve usar para registro de domínio?",
+    "question": "Qual das seguintes opções é um serviço de análise de vídeo em tempo real?",
     "options": [
-      "Amazon CloudFront",
-      "Amazon API Gateway",
-      "Amazon Virtual Private Cloud (Amazon VPC)",
-      "Amazon Route 53"
+      "Amazon Rekognition Video",
+      "Amazon Kinesis Video Streams",
+      "AWS Elemental MediaLive",
+      "Amazon Transcribe"
     ],
     "correctAnswers": [
-      3
+      0
     ]
   },
   {
@@ -420,28 +411,27 @@
     ]
   },
   {
-    "question": "Qual serviço permite que você envie notificações com base em seus logs do AWS CloudTrail?",
+    "question": "Qual serviço da AWS fornece um serviço de catálogo de dados e ETL?",
     "options": [
-      "AWS IAM Access Analyzer",
-      "Amazon Simple Notification Service (SNS)",
-      "Amazon Kinesis Data Firehose",
-      "AWS Config"
+      "AWS Glue",
+      "Amazon Athena",
+      "AWS Data Pipeline",
+      "Amazon EMR"
     ],
     "correctAnswers": [
-      1
+      0
     ]
   },
   {
-    "question": "Quais dispositivos da AWS Snow Family você pode escolher para um aplicativo de borda que requer clustering de dispositivos? (Selecione DOIS.)",
+    "question": "Qual das seguintes opções é um serviço de gerenciamento de patches e conformidade para instâncias EC2?",
     "options": [
-      "AWS Snowball Edge Storage Optimized",
-      "AWS Snowball Edge Compute Optimized",
-      "AWS Snowcone",
-      "AWS Snowmobile"
+      "AWS Systems Manager Patch Manager",
+      "AWS Config",
+      "Amazon Inspector",
+      "AWS CloudTrail"
     ],
     "correctAnswers": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -519,16 +509,15 @@
     ]
   },
   {
-    "question": "Uma Amazon Machine Image (AMI) inclui o seguinte: (Selecione DOIS.)",
+    "question": "Qual serviço da AWS permite criar APIs GraphQL gerenciadas?",
     "options": [
-      "Um ou mais snapshots do Amazon EBS, ou, para AMIs com armazenamento de instância, um modelo para o volume raiz da instância.",
-      "Permissões de inicialização que controlam quais contas da AWS podem usar a AMI para iniciar instâncias.",
-      "Uma definição de tipo de instância.",
-      "Uma configuração de rede."
+      "AWS AppSync",
+      "Amazon API Gateway",
+      "AWS Lambda",
+      "Amazon CloudFront"
     ],
     "correctAnswers": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -561,15 +550,15 @@
     ]
   },
   {
-    "question": "Qual recurso do Amazon S3 permite que você defina regras para transferir automaticamente objetos entre diferentes classes de armazenamento em intervalos específicos?",
+    "question": "Qual das seguintes opções é um serviço de análise de logs e métricas operacionais?",
     "options": [
-      "Same-Region Replication",
-      "Cross-Region Replication",
-      "S3 Storage Lens",
-      "Object Lifecycle Management"
+      "Amazon CloudWatch Logs Insights",
+      "AWS CloudTrail",
+      "AWS Config",
+      "Amazon Inspector"
     ],
     "correctAnswers": [
-      3
+      0
     ]
   },
   {
@@ -585,12 +574,12 @@
     ]
   },
   {
-    "question": "Uma instância EC2 que é fisicamente isolada no nível de hardware do host e iniciada dentro de uma VPC é chamada...",
+    "question": "Qual serviço da AWS fornece um serviço de backup centralizado e automatizado?",
     "options": [
-      "Dedicated Instance.",
-      "On-Demand Instance.",
-      "Reserved Instance.",
-      "Spot Instance."
+      "AWS Backup",
+      "Amazon S3",
+      "AWS Storage Gateway",
+      "Amazon EBS Snapshots"
     ],
     "correctAnswers": [
       0
@@ -622,16 +611,15 @@
     ]
   },
   {
-    "question": "Quais métodos você pode usar para conceder acesso anônimo a um objeto no Amazon S3? (Selecione DOIS.)",
+    "question": "Qual das seguintes opções é um serviço de gerenciamento de segredos e rotação automática?",
     "options": [
-      "Grupos de segurança",
-      "Políticas IAM",
-      "Políticas de bucket",
-      "Access control list (ACL)"
+      "AWS Secrets Manager",
+      "AWS KMS",
+      "AWS Systems Manager Parameter Store",
+      "AWS IAM"
     ],
     "correctAnswers": [
-      2,
-      3
+      0
     ]
   },
   {
@@ -659,16 +647,15 @@
     ]
   },
   {
-    "question": "Você quer usar AWS Elastic Beanstalk para implantar e gerenciar seu aplicativo. Quais sistemas operacionais o AWS Elastic Beanstalk usa? (Selecione 2)",
+    "question": "Qual serviço da AWS permite criar fluxos de trabalho de machine learning?",
     "options": [
-      "Amazon Linux AMI",
-      "Windows Server AMI",
-      "Red Hat Enterprise Linux AMI",
-      "Ubuntu AMI"
+      "Amazon SageMaker Pipelines",
+      "AWS Step Functions",
+      "AWS Glue",
+      "Amazon EMR"
     ],
     "correctAnswers": [
-      0,
-      1
+      0
     ]
   },
   {
@@ -712,16 +699,15 @@
     ]
   },
   {
-    "question": "Qual dos seguintes recursos do Amazon RDS pode prevenir perda de dados no caso de uma falha de Availability Zone? (Selecione DOIS.)",
+    "question": "Qual das seguintes opções é um serviço de análise de custos com recomendações de otimização?",
     "options": [
-      "Snapshots",
-      "Read replicas",
-      "Escalabilidade vertical",
-      "Multi-AZ Deployment"
+      "AWS Cost Explorer",
+      "AWS Budgets",
+      "AWS Cost and Usage Report",
+      "AWS Pricing Calculator"
     ],
     "correctAnswers": [
-      0,
-      3
+      0
     ]
   },
   {
@@ -754,16 +740,15 @@
     ]
   },
   {
-    "question": "Quais serviços da AWS podem ajudá-lo a implantar aplicativos web? (Selecione DOIS.)",
+    "question": "Qual serviço da AWS fornece um serviço de streaming de mídia ao vivo?",
     "options": [
-      "Amazon WorkSpaces",
-      "Amazon Lightsail",
-      "AWS Lambda",
-      "AWS Elastic Beanstalk"
+      "AWS Elemental MediaLive",
+      "Amazon Kinesis Video Streams",
+      "Amazon CloudFront",
+      "AWS Elemental MediaStore"
     ],
     "correctAnswers": [
-      1,
-      3
+      0
     ]
   },
   {
@@ -780,12 +765,12 @@
     ]
   },
   {
-    "question": "Qual dos seguintes serviços da AWS é projetado para implantar contêineres Docker?",
+    "question": "Qual das seguintes opções é um serviço de análise de segurança de aplicações web?",
     "options": [
-      "Amazon Elastic Container Service (ECS)",
-      "Amazon Elastic Compute Cloud (EC2)",
-      "Amazon Lightsail",
-      "AWS Batch"
+      "AWS WAF",
+      "Amazon Inspector",
+      "AWS Shield",
+      "Amazon GuardDuty"
     ],
     "correctAnswers": [
       0
@@ -804,17 +789,15 @@
     ]
   },
   {
-    "question": "Selecione todos os benefícios da computação em lote (usando AWS Batch). (Selecione TRÊS.)",
+    "question": "Qual serviço da AWS permite criar e gerenciar políticas de controle de serviços (SCPs)?",
     "options": [
-      "Você pode mudar o tempo de processamento de trabalhos para períodos em que maior ou menor capacidade cara está disponível.",
-      "A computação em lote pode evitar recursos de computação ociosos com intervenção e supervisão manual frequente.",
-      "Permite a priorização de trabalhos, alinhando a alocação de recursos com objetivos de negócios.",
-      "Aumenta os custos."
+      "AWS Organizations",
+      "AWS IAM",
+      "AWS Control Tower",
+      "AWS Config"
     ],
     "correctAnswers": [
-      0,
-      1,
-      2
+      0
     ]
   },
   {

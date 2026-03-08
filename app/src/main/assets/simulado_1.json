@@ -1,327 +1,788 @@
 [
   {
     "question": "1/65 - Quais das seguintes políticas concedem as permissões necessárias para acessar seus recursos do Amazon S3? (Selecione DUAS).",
-    "options": ["Routing policies","Network access control policies","User policies","Bucket policies","Object policies"],
-    "correctAnswers": [2,3]
+    "options": [
+      "Routing policies",
+      "Network access control policies",
+      "User policies",
+      "Bucket policies",
+      "Object policies"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
   },
   {
     "question": "2/65 - Qual ferramenta de AWS Cost Management permite prever custos futuros e uso com base em consumo passado?",
-    "options": ["AWS Pricing Calculator","Amazon Forecast","AWS Cost Explorer","AWS Cost and Usage report"],
-    "correctAnswers": [2]
+    "options": [
+      "AWS Pricing Calculator",
+      "Amazon Forecast",
+      "AWS Cost Explorer",
+      "AWS Cost and Usage report"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "3/65 - Qual serviço a AWS usa para notificá-lo quando há eventos que podem impactar seus recursos?",
-    "options": ["Amazon SNS","AWS Health","AWS Support Center","Amazon CloudWatch"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon SNS",
+      "AWS Health",
+      "AWS Support Center",
+      "Amazon CloudWatch"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "4/65 - Uma empresa deseja migrar seu banco MySQL on-premises para Amazon RDS. Qual serviço deve ser usado?",
-    "options": ["AWS Application Migration Service","AWS Database Migration Service (DMS)","AWS Schema Conversion Tool (SCT)","AWS Glue"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Application Migration Service",
+      "AWS Database Migration Service (DMS)",
+      "AWS Schema Conversion Tool (SCT)",
+      "AWS Glue"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "5/65 - Qual princípio de design deve ser implementado ao projetar arquitetura na nuvem AWS?",
-    "options": ["Tightly couple your components","Utilize free/open-source software","Use multiple Availability Zones","Always use large servers"],
-    "correctAnswers": [2]
+    "options": [
+      "Tightly couple your components",
+      "Utilize free/open-source software",
+      "Use multiple Availability Zones",
+      "Always use large servers"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "6/65 - Qual componente permite instâncias em uma VPC pública se conectarem à Internet?",
-    "options": ["NAT instance","Internet Gateway","NAT Gateway","API Gateway"],
-    "correctAnswers": [1]
+    "options": [
+      "NAT instance",
+      "Internet Gateway",
+      "NAT Gateway",
+      "API Gateway"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "7/65 - Uma empresa quer garantir que a migração para a nuvem considere o impacto nos colaboradores. Qual perspectiva do AWS CAF se aplica?",
-    "options": ["Security Perspective","Governance Perspective","Operations Perspective","People Perspective"],
-    "correctAnswers": [3]
+    "options": [
+      "Security Perspective",
+      "Governance Perspective",
+      "Operations Perspective",
+      "People Perspective"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "8/65 - Qual afirmação descreve corretamente o modelo de Shared Responsibility da AWS?",
-    "options": ["Ambos (AWS e cliente) são igualmente responsáveis","AWS é responsável pela infraestrutura física; o cliente pelas aplicações e dados","AWS cuida de tudo; cliente só gerencia identidades","Cliente protege a infraestrutura física e AWS os dados"],
-    "correctAnswers": [1]
+    "options": [
+      "Ambos (AWS e cliente) são igualmente responsáveis",
+      "AWS é responsável pela infraestrutura física; o cliente pelas aplicações e dados",
+      "AWS cuida de tudo; cliente só gerencia identidades",
+      "Cliente protege a infraestrutura física e AWS os dados"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "9/65 - Qual é um benefício da migração de sistemas on-premises para a nuvem AWS?",
-    "options": ["Elimina necessidade de criptografia","AWS é gratuita","Elimina patching de EC2","Permite focar em negócios ao invés de manter servidores"],
-    "correctAnswers": [3]
+    "options": [
+      "Elimina necessidade de criptografia",
+      "AWS é gratuita",
+      "Elimina patching de EC2",
+      "Permite focar em negócios ao invés de manter servidores"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "10/65 - Você pode realizar testes de segurança sem aprovação prévia em quais serviços? (Selecione DOIS).",
-    "options": ["AWS IAM","Amazon RDS","Amazon Aurora","Amazon S3","AWS STS"],
-    "correctAnswers": [1,2]
+    "options": [
+      "AWS IAM",
+      "Amazon RDS",
+      "Amazon Aurora",
+      "Amazon S3",
+      "AWS STS"
+    ],
+    "correctAnswers": [
+      1,
+      2
+    ]
   },
   {
     "question": "11/65 - Qual load balancer é mais adequado para tráfego TCP/UDP/TLS, com milhões de requisições e baixa latência?",
-    "options": ["Application Load Balancer","Gateway Load Balancer","Network Load Balancer","None of the above"],
-    "correctAnswers": [2]
+    "options": [
+      "Application Load Balancer",
+      "Gateway Load Balancer",
+      "Network Load Balancer",
+      "None of the above"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "12/65 - Uma empresa quer garantir que os serviços em nuvem mantenham desempenho acordado. Qual capacidade do AWS CAF (Operations Perspective) ajuda?",
-    "options": ["Identity and Access Management","Program and Project Management","Performance and Capacity Management","Modern Application Development"],
-    "correctAnswers": [2]
+    "options": [
+      "Identity and Access Management",
+      "Program and Project Management",
+      "Performance and Capacity Management",
+      "Modern Application Development"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "13/65 - Quais são pilares do AWS Well-Architected Framework? (Selecione DOIS).",
-    "options": ["Agility","Scalability","Sustainability","Performance Efficiency","High Availability"],
-    "correctAnswers": [2,3]
+    "options": [
+      "Agility",
+      "Scalability",
+      "Sustainability",
+      "Performance Efficiency",
+      "High Availability"
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ]
   },
   {
     "question": "14/65 - Qual recurso deve ser usado para mover automaticamente dados pouco acessados do S3 para uma classe mais barata?",
-    "options": ["AWS Transfer Family","AWS Storage Gateway","Amazon S3 ACL","Amazon S3 Lifecycle Policy"],
-    "correctAnswers": [3]
+    "options": [
+      "AWS Transfer Family",
+      "AWS Storage Gateway",
+      "Amazon S3 ACL",
+      "Amazon S3 Lifecycle Policy"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "15/65 - Qual serviço é um controle de versão totalmente gerenciado para hospedar repositórios Git?",
-    "options": ["AWS CodePipeline","AWS CodeBuild","AWS CodeDeploy","AWS CodeCommit"],
-    "correctAnswers": [3]
+    "options": [
+      "AWS CodePipeline",
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodeCommit"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "16/65 - Qual dos seguintes é um banco de dados totalmente gerenciado na AWS que pode armazenar documentos JSON?",
-    "options": ["Amazon Aurora","Amazon ElastiCache","Amazon DynamoDB","Amazon Redshift"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon Aurora",
+      "Amazon ElastiCache",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "17/65 - Qual serviço permite criar um data warehouse na AWS para necessidades de Business Intelligence?",
-    "options": ["Amazon DynamoDB","Amazon RDS","Amazon Redshift","Amazon S3"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon S3"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "18/65 - Qual serviço de segurança baseado em machine learning descobre e protege dados sensíveis como PII (dados pessoais)?",
-    "options": ["Amazon Cognito","Amazon Rekognition","Amazon Macie","Amazon GuardDuty"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon Cognito",
+      "Amazon Rekognition",
+      "Amazon Macie",
+      "Amazon GuardDuty"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "19/65 - Um site recebe tráfego variável durante o dia. Qual vantagem a AWS Cloud oferece sobre data centers tradicionais nesse caso?",
-    "options": ["Quick capacity provisioning","High Availability","Durability","Elasticity"],
-    "correctAnswers": [3]
+    "options": [
+      "Quick capacity provisioning",
+      "High Availability",
+      "Durability",
+      "Elasticity"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "20/65 - No Amazon EC2, qual tipo de instância ajusta seu preço com base em oferta e demanda?",
-    "options": ["On-Demand Instance","Spot Instance","Standard Reserved Instance","Convertible Reserved Instance"],
-    "correctAnswers": [1]
+    "options": [
+      "On-Demand Instance",
+      "Spot Instance",
+      "Standard Reserved Instance",
+      "Convertible Reserved Instance"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "21/65 - Qual é a forma mais segura de fornecer acesso temporário a recursos AWS para aplicações?",
-    "options": ["Criar um IAM group e adicionar a aplicação","Criar um IAM policy e anexar à aplicação","Criar um IAM role e fazer a aplicação assumi-lo","Criar um IAM user com access keys e atribuí-lo"],
-    "correctAnswers": [2]
+    "options": [
+      "Criar um IAM group e adicionar a aplicação",
+      "Criar um IAM policy e anexar à aplicação",
+      "Criar um IAM role e fazer a aplicação assumi-lo",
+      "Criar um IAM user com access keys e atribuí-lo"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "22/65 - Qual princípio de design da nuvem dá suporte ao crescimento de usuários, tráfego ou dados sem perda de performance?",
-    "options": ["Go Serverless","Scalability","Design for failure","Decouple components"],
-    "correctAnswers": [1]
+    "options": [
+      "Go Serverless",
+      "Scalability",
+      "Design for failure",
+      "Decouple components"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "23/65 - Um cliente possui várias instâncias on-demand ociosas em períodos de baixa demanda. Qual estratégia de otimização de custo é mais indicada?",
-    "options": ["Usar spot instances","Criar script para desligar instâncias","Escalar para instâncias maiores","Implementar um Auto Scaling Group"],
-    "correctAnswers": [3]
+    "options": [
+      "Usar spot instances",
+      "Criar script para desligar instâncias",
+      "Escalar para instâncias maiores",
+      "Implementar um Auto Scaling Group"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "24/65 - Qual solução de transporte de dados acelera a movimentação de terabytes/petabytes usando appliances com armazenamento e computação embutidos?",
-    "options": ["AWS Snowball Edge","Lambda@Edge","AWS Snowmobile","AWS Snowcone"],
-    "correctAnswers": [0]
+    "options": [
+      "AWS Snowball Edge",
+      "Lambda@Edge",
+      "AWS Snowmobile",
+      "AWS Snowcone"
+    ],
+    "correctAnswers": [
+      0
+    ]
   },
   {
     "question": "25/65 - Um cliente coleta dados ambientais com drones em espaço limitado. Qual serviço deve usar para armazenar terabytes e depois enviar à AWS?",
-    "options": ["AWS Data Pipeline","AWS Transit Gateway","AWS Snowmobile","AWS Snowcone"],
-    "correctAnswers": [3]
+    "options": [
+      "AWS Data Pipeline",
+      "AWS Transit Gateway",
+      "AWS Snowmobile",
+      "AWS Snowcone"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "26/65 - Qual serviço fornece a capacidade de mover exabytes de dados para AWS usando um caminhão de 45 pés?",
-    "options": ["AWS Snowmobile","AWS Snowball Edge","AWS DataSync","AWS Transfer Family"],
-    "correctAnswers": [0]
+    "options": [
+      "AWS Snowmobile",
+      "AWS Snowball Edge",
+      "AWS DataSync",
+      "AWS Transfer Family"
+    ],
+    "correctAnswers": [
+      0
+    ]
   },
   {
     "question": "27/65 - Qual recurso da AWS permite hospedar sites estáticos de baixo custo e alta durabilidade?",
-    "options": ["Amazon EC2","Amazon EBS","Amazon S3","AWS Elastic Beanstalk"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon EC2",
+      "Amazon EBS",
+      "Amazon S3",
+      "AWS Elastic Beanstalk"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "28/65 - Qual recurso ajuda a distribuir tráfego global para aplicações, usando rotas baseadas em latência e geografia?",
-    "options": ["AWS Transit Gateway","Amazon Route 53","AWS CloudTrail","AWS Config"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Transit Gateway",
+      "Amazon Route 53",
+      "AWS CloudTrail",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "29/65 - Uma empresa quer executar containers Docker sem precisar gerenciar servidores. Qual serviço AWS é mais indicado?",
-    "options": ["Amazon EC2","Amazon RDS","AWS Fargate","Amazon Lightsail"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon EC2",
+      "Amazon RDS",
+      "AWS Fargate",
+      "Amazon Lightsail"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "30/65 - Qual serviço da AWS fornece mensageria desacoplada entre aplicações?",
-    "options": ["Amazon S3","Amazon Kinesis","Amazon SQS","AWS CloudFormation"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon S3",
+      "Amazon Kinesis",
+      "Amazon SQS",
+      "AWS CloudFormation"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "31/65 - Qual serviço AWS é usado para monitorar métricas e logs de aplicações e recursos?",
-    "options": ["AWS Config","AWS Trusted Advisor","Amazon CloudWatch","AWS CloudTrail"],
-    "correctAnswers": [2]
+    "options": [
+      "AWS Config",
+      "AWS Trusted Advisor",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "32/65 - Qual serviço fornece recomendações de melhores práticas de segurança, custo e performance?",
-    "options": ["AWS CloudTrail","Amazon Inspector","AWS Trusted Advisor","AWS Config"],
-    "correctAnswers": [2]
+    "options": [
+      "AWS CloudTrail",
+      "Amazon Inspector",
+      "AWS Trusted Advisor",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "33/65 - Qual serviço permite auditar chamadas de API feitas na sua conta AWS?",
-    "options": ["AWS Config","AWS CloudTrail","AWS Trusted Advisor","Amazon CloudWatch"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "Amazon CloudWatch"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "34/65 - Qual é o modelo de precificação da AWS onde você paga apenas pelo uso efetivo dos recursos?",
-    "options": ["Preço fixo","Pay-as-you-go","Assinatura mensal","Licenciamento anual"],
-    "correctAnswers": [1]
+    "options": [
+      "Preço fixo",
+      "Pay-as-you-go",
+      "Assinatura mensal",
+      "Licenciamento anual"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "35/65 - Qual é a forma mais segura de fornecer acesso temporário a recursos AWS?",
-    "options": ["Criar usuário IAM com chaves permanentes","Criar grupo IAM e adicionar a aplicação","Criar política IAM e anexar à aplicação","Criar um IAM Role e fazer a aplicação assumi-lo"],
-    "correctAnswers": [3]
+    "options": [
+      "Criar usuário IAM com chaves permanentes",
+      "Criar grupo IAM e adicionar a aplicação",
+      "Criar política IAM e anexar à aplicação",
+      "Criar um IAM Role e fazer a aplicação assumi-lo"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "36/65 - Qual serviço ajuda a analisar grandes fluxos de dados em tempo real?",
-    "options": ["Amazon S3","Amazon Kinesis","AWS Snowball","AWS Glue"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon S3",
+      "Amazon Kinesis",
+      "AWS Snowball",
+      "AWS Glue"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "37/65 - Qual serviço AWS fornece armazenamento de objetos escalável e altamente durável?",
-    "options": ["Amazon EBS","Amazon RDS","Amazon S3","Amazon EFS"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon EBS",
+      "Amazon RDS",
+      "Amazon S3",
+      "Amazon EFS"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "38/65 - Qual serviço AWS é usado para provisionar infraestrutura como código (IaC)?",
-    "options": ["AWS Elastic Beanstalk","AWS CloudFormation","Amazon EC2","AWS OpsWorks"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Elastic Beanstalk",
+      "AWS CloudFormation",
+      "Amazon EC2",
+      "AWS OpsWorks"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "39/65 - Qual serviço AWS ajuda a gerenciar chaves de criptografia?",
-    "options": ["Amazon Macie","AWS KMS (Key Management Service)","Amazon Cognito","AWS Shield"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Macie",
+      "AWS KMS (Key Management Service)",
+      "Amazon Cognito",
+      "AWS Shield"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "40/65 - Qual serviço AWS ajuda a gerenciar identidades de usuários finais (sign-in, sign-up)?",
-    "options": ["Amazon Cognito","AWS IAM","AWS KMS","AWS Shield"],
-    "correctAnswers": [0]
+    "options": [
+      "Amazon Cognito",
+      "AWS IAM",
+      "AWS KMS",
+      "AWS Shield"
+    ],
+    "correctAnswers": [
+      0
+    ]
   },
   {
     "question": "41/65 - Qual serviço fornece proteção contra ataques DDoS?",
-    "options": ["AWS Macie","AWS Shield","AWS Config","AWS WAF"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Macie",
+      "AWS Shield",
+      "AWS Config",
+      "AWS WAF"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "42/65 - Qual serviço AWS fornece um firewall de aplicação web (WAF) para bloquear tráfego malicioso?",
-    "options": ["Amazon GuardDuty","AWS WAF","AWS Shield","AWS Config"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon GuardDuty",
+      "AWS WAF",
+      "AWS Shield",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "43/65 - Qual serviço AWS permite criar e gerenciar VPCs (Virtual Private Clouds)?",
-    "options": ["AWS Shield","Amazon VPC","AWS Transit Gateway","AWS Config"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Shield",
+      "Amazon VPC",
+      "AWS Transit Gateway",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "44/65 - Qual recurso permite conectar múltiplas VPCs e redes on-premises de forma centralizada?",
-    "options": ["Amazon VPC","AWS Direct Connect","AWS Transit Gateway","AWS Route 53"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon VPC",
+      "AWS Direct Connect",
+      "AWS Transit Gateway",
+      "AWS Route 53"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "45/65 - Qual serviço permite conectar sua rede on-premises à AWS via link dedicado de baixa latência?",
-    "options": ["AWS Direct Connect","Amazon VPC Peering","AWS Transit Gateway","Amazon CloudFront"],
-    "correctAnswers": [0]
+    "options": [
+      "AWS Direct Connect",
+      "Amazon VPC Peering",
+      "AWS Transit Gateway",
+      "Amazon CloudFront"
+    ],
+    "correctAnswers": [
+      0
+    ]
   },
   {
     "question": "46/65 - Qual serviço AWS ajuda a entregar conteúdo globalmente com baixa latência usando rede de edge locations?",
-    "options": ["Amazon S3","Amazon CloudFront","Amazon VPC","AWS Global Accelerator"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon S3",
+      "Amazon CloudFront",
+      "Amazon VPC",
+      "AWS Global Accelerator"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "47/65 - Qual serviço AWS fornece serviços de DNS escaláveis e confiáveis?",
-    "options": ["Amazon CloudFront","AWS Direct Connect","Amazon Route 53","AWS Transit Gateway"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon Route 53",
+      "AWS Transit Gateway"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "48/65 - Qual serviço AWS é usado para armazenamento em bloco persistente de instâncias EC2?",
-    "options": ["Amazon S3","Amazon EBS","Amazon EFS","Amazon Glacier"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon Glacier"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "49/65 - Qual serviço fornece armazenamento de arquivos compartilhados para múltiplas instâncias?",
-    "options": ["Amazon S3","Amazon EBS","Amazon EFS","Amazon Glacier"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EFS",
+      "Amazon Glacier"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "50/65 - Qual serviço AWS é projetado para arquivamento de dados de baixo custo e longo prazo?",
-    "options": ["Amazon S3 Standard","Amazon EBS","Amazon S3 Glacier","Amazon RDS"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon S3 Standard",
+      "Amazon EBS",
+      "Amazon S3 Glacier",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "51/65 - Qual serviço permite executar funções serverless em resposta a eventos sem gerenciar servidores?",
-    "options": ["Amazon EC2","AWS Fargate","AWS Lambda","Amazon ECS"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon EC2",
+      "AWS Fargate",
+      "AWS Lambda",
+      "Amazon ECS"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "52/65 - Qual serviço AWS é usado para pipeline de integração e entrega contínua (CI/CD)?",
-    "options": ["AWS CodeCommit","AWS CodeBuild","AWS CodeDeploy","AWS CodePipeline"],
-    "correctAnswers": [3]
+    "options": [
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodePipeline"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
     "question": "53/65 - Qual serviço AWS é usado para compilar código, rodar testes e gerar pacotes de software?",
-    "options": ["AWS CodePipeline","AWS CodeCommit","AWS CodeBuild","AWS CodeDeploy"],
-    "correctAnswers": [2]
+    "options": [
+      "AWS CodePipeline",
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeDeploy"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "54/65 - Qual serviço AWS é usado para automatizar deploys de aplicações em EC2, Lambda e on-premises?",
-    "options": ["AWS CodePipeline","AWS CodeCommit","AWS CodeDeploy","AWS CodeBuild"],
-    "correctAnswers": [2]
+    "options": [
+      "AWS CodePipeline",
+      "AWS CodeCommit",
+      "AWS CodeDeploy",
+      "AWS CodeBuild"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "55/65 - Qual banco de dados compatível com MySQL e PostgreSQL é otimizado pela AWS para alta performance?",
-    "options": ["Amazon RDS","Amazon DynamoDB","Amazon Redshift","Amazon Aurora"],
-    "correctAnswers": [3]
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Redshift",
+      "Amazon Aurora"
+    ],
+    "correctAnswers": [
+      3
+    ]
   },
   {
-    "question": "56/65 - Qual banco de dados compatível com MySQL e PostgreSQL é otimizado pela AWS para alta performance?",
-    "options": ["Amazon DynamoDB","Amazon RDS","Amazon Aurora","Amazon Redshift"],
-    "correctAnswers": [2]
+    "question": "56/65 - Qual serviço da AWS fornece um repositório Git totalmente gerenciado para hospedar código-fonte?",
+    "options": [
+      "AWS CodeCommit",
+      "AWS CodeBuild",
+      "AWS CodeDeploy",
+      "AWS CodePipeline"
+    ],
+    "correctAnswers": [
+      0
+    ]
   },
   {
     "question": "57/65 - Qual serviço AWS fornece banco NoSQL key-value e documento de baixa latência?",
-    "options": ["Amazon Aurora","Amazon RDS","Amazon DynamoDB","Amazon Redshift"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon Aurora",
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Redshift"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "58/65 - Qual serviço AWS é usado para data warehouse com análise de grandes volumes de dados?",
-    "options": ["Amazon DynamoDB","Amazon RDS","Amazon Redshift","Amazon Aurora"],
-    "correctAnswers": [2]
+    "options": [
+      "Amazon DynamoDB",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon Aurora"
+    ],
+    "correctAnswers": [
+      2
+    ]
   },
   {
     "question": "59/65 - Qual serviço AWS é usado para ETL (extrair, transformar e carregar dados)?",
-    "options": ["Amazon Kinesis","AWS Glue","AWS Data Pipeline","Amazon EMR"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Kinesis",
+      "AWS Glue",
+      "AWS Data Pipeline",
+      "Amazon EMR"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "60/65 - Qual serviço AWS fornece cluster Hadoop gerenciado para Big Data?",
-    "options": ["AWS Glue","Amazon EMR","Amazon Redshift","Amazon RDS"],
-    "correctAnswers": [1]
+    "options": [
+      "AWS Glue",
+      "Amazon EMR",
+      "Amazon Redshift",
+      "Amazon RDS"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "61/65 - Qual serviço AWS fornece armazenamento de chaves e segredos para aplicações?",
-    "options": ["Amazon Cognito","AWS Secrets Manager","AWS KMS","AWS Config"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Cognito",
+      "AWS Secrets Manager",
+      "AWS KMS",
+      "AWS Config"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "62/65 - Qual serviço AWS fornece ferramentas de Machine Learning gerenciadas para desenvolvedores e cientistas de dados?",
-    "options": ["Amazon Rekognition","Amazon SageMaker","Amazon Macie","Amazon Comprehend"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Rekognition",
+      "Amazon SageMaker",
+      "Amazon Macie",
+      "Amazon Comprehend"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "63/65 - Qual serviço AWS é usado para tradução automática de idiomas?",
-    "options": ["Amazon Comprehend","Amazon Translate","Amazon Polly","Amazon Lex"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Comprehend",
+      "Amazon Translate",
+      "Amazon Polly",
+      "Amazon Lex"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "64/65 - Qual serviço AWS converte texto em fala realista?",
-    "options": ["Amazon Translate","Amazon Polly","Amazon Lex","Amazon Comprehend"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Translate",
+      "Amazon Polly",
+      "Amazon Lex",
+      "Amazon Comprehend"
+    ],
+    "correctAnswers": [
+      1
+    ]
   },
   {
     "question": "65/65 - Qual serviço AWS fornece chatbots com processamento de linguagem natural?",
-    "options": ["Amazon Comprehend","Amazon Lex","Amazon Polly","Amazon Translate"],
-    "correctAnswers": [1]
+    "options": [
+      "Amazon Comprehend",
+      "Amazon Lex",
+      "Amazon Polly",
+      "Amazon Translate"
+    ],
+    "correctAnswers": [
+      1
+    ]
   }
 ]

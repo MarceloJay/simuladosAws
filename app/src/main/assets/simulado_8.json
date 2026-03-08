@@ -86,16 +86,15 @@
     ]
   },
   {
-    "question": "Qual dos seguintes serviços da AWS permite acesso de nível de administrador (usuário root) ao sistema operacional? (Selecione DOIS)",
+    "question": "Qual serviço da AWS fornece um serviço de conversão de vídeo e áudio na nuvem?",
     "options": [
-      "Instância do Amazon EC2",
-      "Banco de dados Amazon DynamoDB",
-      "Cluster Amazon EMR",
-      "Fila Amazon SQS"
+      "AWS Elemental MediaConvert",
+      "Amazon Kinesis Video Streams",
+      "AWS Elemental MediaLive",
+      "Amazon Transcribe"
     ],
     "correctAnswers": [
-      0,
-      2
+      0
     ]
   },
   {
