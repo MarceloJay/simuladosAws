@@ -1,0 +1,47 @@
+NOTAS DA VERSÃO 1.2.0
+=====================
+
+🎉 NOVIDADES:
+
+✨ Nova Tela "Sobre"
+- Informações completas sobre o app
+- Lista de recursos disponíveis
+- Dados do desenvolvedor
+- Mensagem sobre a missão do app (gratuito, sem anúncios)
+
+💰 Sistema de Doação
+- Card com chave PIX (e-mail)
+- Botão para copiar a chave facilmente
+- Incentivo para apoiar o projeto
+
+🔄 Sistema de Atualização Automática
+- In-App Update implementado
+- Notificação quando nova versão está disponível
+- Download em segundo plano
+- Snackbar para instalar após download
+
+🌙 MELHORIAS NO MODO DARK:
+
+✅ Cards de simulados agora aparecem corretamente
+✅ Dropdown de quantidade de questões visível
+✅ Botões mantêm cor azul consistente
+✅ Textos legíveis em todos os cards
+✅ Melhor contraste em toda a interface
+
+🎨 MELHORIAS DE INTERFACE:
+
+📐 Espaçamentos otimizados
+- Mais espaço abaixo dos botões
+- Melhor distribuição dos elementos
+- Layout mais limpo e organizado
+
+🔧 Ajustes de UX
+- Botão de doação com tamanho adequado
+- Texto não cortado nos botões
+- Spinner com texto visível antes e depois de clicar
+
+---
+
+VERSÃO: 1.2.0 (Build 8)
+DATA: Março 2026
+DESENVOLVEDOR: JayDev

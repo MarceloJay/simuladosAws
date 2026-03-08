@@ -33,9 +33,85 @@ public class MainActivity extends AppCompatActivity {
         updateManager = new UpdateManager(this);
         updateManager.checkForUpdate(AppUpdateType.FLEXIBLE);
 
-        // Configurar action bar
+        // Configurar action bar customizada
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(R.string.app_name);
+            getSupportActionBar().setDisplayShowCustomEnabled(true);
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+            
+            // Inflar layout customizado para a action bar
+            android.view.LayoutInflater inflater = (android.view.LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+            View customView = inflater.inflate(R.layout.custom_action_bar, null);
+            getSupportActionBar().setCustomView(customView);
+        }
+
+        // Configurar dados dos simulados
+        String[] simuladoAssets = {"simulado_1.json", "simulado_2.json", "simulado_3.json", "simulado_4.json", 
+                                   "simulado_5.json", "simulado_6.json", "simulado_7.json", "simulado_8.json", 
+                                   "simulado_9.json", "simulado_10.json"};
+        android.content.SharedPreferences prefs = getSharedPreferences("SimuladoResults", MODE_PRIVATE);
+        
+        // Calcular estatísticas
+        int completedCount = 0;
+        int totalPercentage = 0;
+        int bestPercentage = 0;
+        long totalTimeSeconds = 0;
+        
+        for (String asset : simuladoAssets) {
+            int percentage = prefs.getInt(asset, -1);
+            if (percentage >= 0) {
+                completedCount++;
+                totalPercentage += percentage;
+                if (percentage > bestPercentage) {
+                    bestPercentage = percentage;
+                }
+                // Obter tempo gasto
+                long timeSeconds = prefs.getLong(asset + "_time", 0);
+                totalTimeSeconds += timeSeconds;
+            }
+        }
+        
+        int averagePercentage = completedCount > 0 ? totalPercentage / completedCount : 0;
+        int progressPercent = (completedCount * 100) / simuladoAssets.length;
+        long averageTimeMinutes = completedCount > 0 ? (totalTimeSeconds / completedCount) / 60 : 0;
+        
+        // Atualizar header de progresso
+        View headerProgress = findViewById(R.id.headerProgress);
+        if (headerProgress != null) {
+            TextView txtProgressCount = headerProgress.findViewById(R.id.txtProgressCount);
+            TextView txtProgressPercent = headerProgress.findViewById(R.id.txtProgressPercent);
+            android.widget.ProgressBar progressBar = headerProgress.findViewById(R.id.progressBar);
+            
+            if (txtProgressCount != null) {
+                txtProgressCount.setText(completedCount + "/10 simulados concluídos");
+            }
+            if (txtProgressPercent != null) {
+                txtProgressPercent.setText(progressPercent + "%");
+            }
+            if (progressBar != null) {
+                progressBar.setProgress(progressPercent);
+            }
+        }
+        
+        // Atualizar header de estatísticas
+        View headerStats = findViewById(R.id.headerStatistics);
+        if (headerStats != null) {
+            TextView txtStatsCompleted = headerStats.findViewById(R.id.txtStatsCompleted);
+            TextView txtStatsAverage = headerStats.findViewById(R.id.txtStatsAverage);
+            TextView txtStatsBest = headerStats.findViewById(R.id.txtStatsBest);
+            TextView txtStatsAvgTime = headerStats.findViewById(R.id.txtStatsAvgTime);
+            
+            if (txtStatsCompleted != null) {
+                txtStatsCompleted.setText(String.valueOf(completedCount));
+            }
+            if (txtStatsAverage != null) {
+                txtStatsAverage.setText(averagePercentage + "%");
+            }
+            if (txtStatsBest != null) {
+                txtStatsBest.setText(bestPercentage + "%");
+            }
+            if (txtStatsAvgTime != null) {
+                txtStatsAvgTime.setText(averageTimeMinutes + "min");
+            }
         }
 
         String[] options = new String[]{"5 questões", "10 questões", "20 questões", "30 questões", "65 questões"};
@@ -68,14 +144,9 @@ public class MainActivity extends AppCompatActivity {
         // Configure card titles
         String[] cardTitles = {"Simulado 01", "Simulado 02", "Simulado 03", "Simulado 04", "Simulado 05", 
                                "Simulado 06", "Simulado 07", "Simulado 08", "Simulado 09", "Simulado 10"};
-        String[] simuladoAssets = {"simulado_1.json", "simulado_2.json", "simulado_3.json", "simulado_4.json", 
-                                   "simulado_5.json", "simulado_6.json", "simulado_7.json", "simulado_8.json", 
-                                   "simulado_9.json", "simulado_10.json"};
         int[] cardIds = {R.id.cardSimulado1, R.id.cardSimulado2, R.id.cardSimulado3, R.id.cardSimulado4, 
                          R.id.cardSimulado5, R.id.cardSimulado6, R.id.cardSimulado7, R.id.cardSimulado8, 
                          R.id.cardSimulado9, R.id.cardSimulado10};
-
-        android.content.SharedPreferences prefs = getSharedPreferences("SimuladoResults", MODE_PRIVATE);
 
         for (int i = 0; i < cardIds.length; i++) {
             View card = findViewById(cardIds[i]);
@@ -86,22 +157,74 @@ public class MainActivity extends AppCompatActivity {
                 }
                 
                 // Load and display percentage if available
-                TextView percentageView = card.findViewById(R.id.txtPercentage);
-                if (percentageView != null) {
-                    int percentage = prefs.getInt(simuladoAssets[i], -1);
+                TextView txtStatusBadge = card.findViewById(R.id.txtStatusBadge);
+                Button btnStart = card.findViewById(R.id.btnStartSim);
+                LinearLayout layoutProgress = card.findViewById(R.id.layoutProgress);
+                android.widget.ProgressBar progressBarSimulado = card.findViewById(R.id.progressBarSimulado);
+                TextView txtPercentage = card.findViewById(R.id.txtPercentage);
+                
+                // Forçar cor azul do botão programaticamente
+                if (btnStart != null) {
+                    btnStart.setBackgroundTintList(android.content.res.ColorStateList.valueOf(0xFF2563EB));
+                }
+                
+                int percentage = prefs.getInt(simuladoAssets[i], -1);
+                
+                if (txtStatusBadge != null && btnStart != null) {
                     if (percentage >= 0) {
-                        percentageView.setText(percentage + "%");
-                        percentageView.setVisibility(View.VISIBLE);
-                        // Color based on performance
-                        if (percentage >= 70) {
-                            percentageView.setTextColor(0xFF27AE60); // Green
-                        } else if (percentage >= 50) {
-                            percentageView.setTextColor(0xFFF39C12); // Orange
-                        } else {
-                            percentageView.setTextColor(0xFFE74C3C); // Red
+                        // Simulado concluído
+                        txtStatusBadge.setText("Concluído");
+                        txtStatusBadge.setTextColor(0xFFFFFFFF);
+                        txtStatusBadge.setBackgroundResource(R.drawable.badge_completed);
+                        btnStart.setText("▶ Continuar");
+                        
+                        // Atualizar barra de progresso e porcentagem
+                        if (progressBarSimulado != null) {
+                            progressBarSimulado.setProgress(percentage);
+                            
+                            // Definir cor baseado na performance
+                            int progressColor;
+                            if (percentage >= 70) {
+                                progressColor = 0xFF27AE60; // Verde
+                            } else if (percentage >= 50) {
+                                progressColor = 0xFFF39C12; // Laranja
+                            } else {
+                                progressColor = 0xFFE74C3C; // Vermelho
+                            }
+                            progressBarSimulado.setProgressTintList(android.content.res.ColorStateList.valueOf(progressColor));
+                        }
+                        
+                        if (txtPercentage != null) {
+                            txtPercentage.setText(percentage + "%");
+                            
+                            // Definir cor do texto baseado na performance
+                            int textColor;
+                            if (percentage >= 70) {
+                                textColor = 0xFF27AE60; // Verde
+                            } else if (percentage >= 50) {
+                                textColor = 0xFFF39C12; // Laranja
+                            } else {
+                                textColor = 0xFFE74C3C; // Vermelho
+                            }
+                            txtPercentage.setTextColor(textColor);
                         }
                     } else {
-                        percentageView.setVisibility(View.GONE);
+                        // Não iniciado
+                        txtStatusBadge.setText("Não iniciado");
+                        txtStatusBadge.setTextColor(0xFF6B7280);
+                        txtStatusBadge.setBackgroundResource(R.drawable.badge_not_started);
+                        btnStart.setText("▶ Iniciar");
+                        
+                        // Progress bar zerado
+                        if (progressBarSimulado != null) {
+                            progressBarSimulado.setProgress(0);
+                            progressBarSimulado.setProgressTintList(android.content.res.ColorStateList.valueOf(0xFFE5E7EB));
+                        }
+                        
+                        if (txtPercentage != null) {
+                            txtPercentage.setText("0%");
+                            txtPercentage.setTextColor(0xFF9CA3AF);
+                        }
                     }
                 }
             }
@@ -191,9 +314,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Buttons on each simulado card
-        View btnStartSim1 = findViewById(R.id.btnStartSim);
-        View btnStartSim2 = findViewById(R.id.btnStartSim2);
-        View btnStartSim3 = findViewById(R.id.btnStartSim3);
+        View btnStartSim1 = card1 != null ? card1.findViewById(R.id.btnStartSim) : null;
+        View btnStartSim2 = card2 != null ? card2.findViewById(R.id.btnStartSim) : null;
+        View btnStartSim3 = card3 != null ? card3.findViewById(R.id.btnStartSim) : null;
         View btnStartSim4 = card4 != null ? card4.findViewById(R.id.btnStartSim) : null;
         View btnStartSim5 = card5 != null ? card5.findViewById(R.id.btnStartSim) : null;
         View btnStartSim6 = card6 != null ? card6.findViewById(R.id.btnStartSim) : null;

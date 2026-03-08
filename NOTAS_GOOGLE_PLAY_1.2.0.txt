@@ -1,0 +1,9 @@
+🎉 Novidades v1.2.0:
+
+✨ Nova tela "Sobre" com informações do app e desenvolvedor
+💰 Sistema de doação via PIX para apoiar o projeto
+🔄 Atualização automática in-app implementada
+🌙 Correções importantes para modo dark
+🎨 Melhorias de interface e espaçamentos
+
+Obrigado por usar nosso app! Se gostou, considere fazer uma doação para manter o app gratuito e sem anúncios.

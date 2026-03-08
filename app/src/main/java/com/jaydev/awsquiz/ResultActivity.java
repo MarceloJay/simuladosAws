@@ -35,6 +35,8 @@ public class ResultActivity extends AppCompatActivity {
             SharedPreferences prefs = getSharedPreferences("SimuladoResults", MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
             editor.putInt(simuladoAsset, percent);
+            // Salvar tempo gasto em segundos
+            editor.putLong(simuladoAsset + "_time", elapsed / 1000);
             editor.apply();
         }
 

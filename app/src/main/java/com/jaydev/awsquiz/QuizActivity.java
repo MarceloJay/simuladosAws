@@ -39,6 +39,7 @@ public class QuizActivity extends AppCompatActivity {
     private long startTime = 0L;
     private long elapsedBeforePause = 0L; // accumulated before current running
     private boolean isPaused = false;
+    private static final long MAX_TIME_MS = 90 * 60 * 1000; // 90 minutos em milissegundos
 
     // Selection rules
     private int maxSelections = 1;
@@ -48,7 +49,17 @@ public class QuizActivity extends AppCompatActivity {
         @Override
         public void run() {
             long elapsed = elapsedBeforePause + (SystemClock.uptimeMillis() - startTime);
-            txtTimer.setText(formatElapsed(elapsed));
+            
+            // Verificar se o tempo acabou
+            if (elapsed >= MAX_TIME_MS) {
+                timerHandler.removeCallbacks(this);
+                finishQuizTimeUp();
+                return;
+            }
+            
+            // Mostrar tempo restante ao invés de tempo decorrido
+            long remaining = MAX_TIME_MS - elapsed;
+            txtTimer.setText(formatElapsed(remaining));
             timerHandler.postDelayed(this, 500);
         }
     };
@@ -247,6 +258,63 @@ public class QuizActivity extends AppCompatActivity {
         // start timer
         startTime = SystemClock.uptimeMillis();
         timerHandler.postDelayed(timerRunnable, 0);
+    }
+
+    private void finishQuizTimeUp() {
+        // Mostrar mensagem que o tempo acabou
+        Toast.makeText(this, "Tempo esgotado! O simulado será finalizado.", Toast.LENGTH_LONG).show();
+        
+        // Incluir resposta atual antes de finalizar
+        checkAnswer();
+        
+        String simAsset = getIntent().getStringExtra("SIMULADO_ASSET");
+        if (simAsset == null || simAsset.isEmpty()) simAsset = "questions.json";
+        
+        Intent intent = new Intent(QuizActivity.this, ResultActivity.class);
+        intent.putExtra("SCORE", score);
+        intent.putExtra("TOTAL", questionList.size());
+        intent.putExtra("ANSWERED", answeredCount);
+        intent.putExtra("ELAPSED_MS", MAX_TIME_MS); // Tempo máximo atingido
+        intent.putExtra("SIMULADO_ASSET", simAsset);
+        intent.putExtra("TIME_UP", true); // Flag para indicar que o tempo acabou
+        
+        // Serializar respostas do usuário
+        JSONArray outer = new JSONArray();
+        for (List<Integer> la : userAnswers) {
+            JSONArray inner = new JSONArray();
+            for (Integer idx : la) inner.put(idx);
+            outer.put(inner);
+        }
+        
+        // Serializar questões
+        JSONArray qArr = new JSONArray();
+        try {
+            for (Question qq : questionList) {
+                JSONObject jo = new JSONObject();
+                String full = qq.getQuestion() == null ? "" : qq.getQuestion();
+                String label = null;
+                String body = full;
+                java.util.regex.Matcher m = java.util.regex.Pattern.compile("^\\s*(\\d+\\/\\d+)\\s*-\\s*(.*)").matcher(full);
+                if (m.find()) {
+                    label = m.group(1);
+                    body = m.group(2);
+                }
+                if (label != null) jo.put("originalLabel", label);
+                jo.put("question", body);
+                JSONArray opts = new JSONArray();
+                for (String s : qq.getOptions()) opts.put(s);
+                jo.put("options", opts);
+                JSONArray ca = new JSONArray();
+                for (Integer c : qq.getCorrectAnswers()) ca.put(c);
+                jo.put("correctAnswers", ca);
+                qArr.put(jo);
+            }
+        } catch (Exception ex) { ex.printStackTrace(); }
+        
+        intent.putExtra("QUESTIONS_JSON", qArr.toString());
+        intent.putExtra("USER_ANSWERS_JSON", outer.toString());
+        startActivity(intent);
+        finish();
     }
 
     private String formatElapsed(long ms) {

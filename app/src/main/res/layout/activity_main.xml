@@ -8,107 +8,101 @@
     android:background="#F3F4F6">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="399dp"
+        android:layout_height="789dp"
         android:layout_gravity="center"
         android:background="#FFFFFF"
         android:clipToPadding="false"
         android:elevation="6dp"
         android:orientation="vertical"
         android:padding="0dp"
-        >
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Header com fundo escuro -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#37475A"
-            android:gravity="center_vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/cloud_practitioner_logo"
-                android:scaleType="centerCrop"
-                android:layout_marginEnd="20dp"
-                android:contentDescription="@string/aws_cloud_practitioner_logo" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/aws_cloud_practitioner_simulado"
-                android:textColor="#FFFFFF"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:lineSpacingExtra="2dp" />
-
-        </LinearLayout>
-
-        <!-- Scroll area that contains only the cards -->
+        <!-- Scroll area that contains headers and cards -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:padding="24dp"
             android:fillViewport="true">
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <!-- Simulado 1 card -->
+                <!-- Header de Progresso Geral -->
                 <include
-                    android:id="@+id/cardSimulado1"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    android:id="@+id/headerProgress"
+                    layout="@layout/header_progress" />
 
-                <!-- Simulado 2 card -->
+                <!-- Header de Estatísticas -->
                 <include
-                    android:id="@+id/cardSimulado2"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    android:id="@+id/headerStatistics"
+                    layout="@layout/header_statistics" />
 
-                <!-- Simulado 3 card -->
-                <include
-                    android:id="@+id/cardSimulado3"
-                    layout="@layout/item_simulado_card_horizontal" />
+                <!-- Container dos cards com padding -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingBottom="16dp">
 
-                <!-- Simulado 4 card -->
-                <include
-                    android:id="@+id/cardSimulado4"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 1 card -->
+                    <include
+                        android:id="@+id/cardSimulado1"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 5 card -->
-                <include
-                    android:id="@+id/cardSimulado5"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 2 card -->
+                    <include
+                        android:id="@+id/cardSimulado2"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 6 card -->
-                <include
-                    android:id="@+id/cardSimulado6"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 3 card -->
+                    <include
+                        android:id="@+id/cardSimulado3"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 7 card -->
-                <include
-                    android:id="@+id/cardSimulado7"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 4 card -->
+                    <include
+                        android:id="@+id/cardSimulado4"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 8 card -->
-                <include
-                    android:id="@+id/cardSimulado8"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 5 card -->
+                    <include
+                        android:id="@+id/cardSimulado5"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 9 card -->
-                <include
-                    android:id="@+id/cardSimulado9"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 6 card -->
+                    <include
+                        android:id="@+id/cardSimulado6"
+                        layout="@layout/item_simulado_card_horizontal" />
 
-                <!-- Simulado 10 card -->
-                <include
-                    android:id="@+id/cardSimulado10"
-                    layout="@layout/item_simulado_card_horizontal" />
+                    <!-- Simulado 7 card -->
+                    <include
+                        android:id="@+id/cardSimulado7"
+                        layout="@layout/item_simulado_card_horizontal" />
+
+                    <!-- Simulado 8 card -->
+                    <include
+                        android:id="@+id/cardSimulado8"
+                        layout="@layout/item_simulado_card_horizontal" />
+
+                    <!-- Simulado 9 card -->
+                    <include
+                        android:id="@+id/cardSimulado9"
+                        layout="@layout/item_simulado_card_horizontal" />
+
+                    <!-- Simulado 10 card -->
+                    <include
+                        android:id="@+id/cardSimulado10"
+                        layout="@layout/item_simulado_card_horizontal" />
+
+                </LinearLayout>
+                <!-- Fim do container dos cards -->
 
             </LinearLayout>
 
