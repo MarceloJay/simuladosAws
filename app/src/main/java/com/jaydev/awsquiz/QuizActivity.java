@@ -1,6 +1,7 @@
 package com.jaydev.awsquiz;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -117,16 +118,12 @@ public class QuizActivity extends AppCompatActivity {
         if (asset == null || asset.isEmpty()) asset = "questions.json";
         final String simAsset = asset;
         List<Question> allQuestions = QuestionBank.getQuestions(this, asset);
-        // Shuffle questions to present them in random order
+        
+        // Embaralhar questões para apresentar em ordem aleatória
         Collections.shuffle(allQuestions);
-
-        // Limit to requested count if provided
-        int requested = getIntent().getIntExtra("QUESTION_COUNT", -1);
-        if (requested > 0 && requested < allQuestions.size()) {
-            questionList = new ArrayList<>(allQuestions.subList(0, requested));
-        } else {
-            questionList = allQuestions;
-        }
+        
+        // Sempre usar todas as questões (65)
+        questionList = allQuestions;
 
         // initialize userAnswers with empty lists for each question
         for (int i = 0; i < questionList.size(); i++) {

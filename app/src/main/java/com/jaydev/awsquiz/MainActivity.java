@@ -49,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
                                    "simulado_5.json", "simulado_6.json", "simulado_7.json", "simulado_8.json", 
                                    "simulado_9.json", "simulado_10.json"};
         android.content.SharedPreferences prefs = getSharedPreferences("SimuladoResults", MODE_PRIVATE);
-        
-        // Calcular estatísticas
         int completedCount = 0;
         int totalPercentage = 0;
         int bestPercentage = 0;
@@ -114,34 +112,8 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        String[] options = new String[]{"5 questões", "10 questões", "20 questões", "30 questões", "65 questões"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, options) {
-            @Override
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View view = super.getView(position, convertView, parent);
-                if (view instanceof TextView) {
-                    TextView tv = (TextView) view;
-                    tv.setTextColor(0xFF111111); // Preto
-                    tv.setTextSize(13);
-                }
-                return view;
-            }
-            
-            @Override
-            public View getDropDownView(int position, View convertView, ViewGroup parent) {
-                View view = super.getDropDownView(position, convertView, parent);
-                if (view instanceof TextView) {
-                    TextView tv = (TextView) view;
-                    tv.setTextColor(0xFF111111); // Preto
-                    tv.setBackgroundColor(0xFFFFFFFF); // Branco
-                    tv.setPadding(14, 14, 14, 14);
-                }
-                return view;
-            }
-        };
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Configure card titles
+        
+        // Calcular estatísticas
         String[] cardTitles = {"Simulado 01", "Simulado 02", "Simulado 03", "Simulado 04", "Simulado 05", 
                                "Simulado 06", "Simulado 07", "Simulado 08", "Simulado 09", "Simulado 10"};
         int[] cardIds = {R.id.cardSimulado1, R.id.cardSimulado2, R.id.cardSimulado3, R.id.cardSimulado4, 
@@ -230,90 +202,18 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Each card include contains a Spinner with id spinnerCount; find them inside the included layouts
+        // Configurar botões dos simulados (sempre 65 questões)
         View card1 = findViewById(R.id.cardSimulado1);
-        Spinner spinnerCard1 = null;
-        if (card1 != null) spinnerCard1 = card1.findViewById(R.id.spinnerCount);
-        if (spinnerCard1 != null) {
-            spinnerCard1.setAdapter(adapter);
-            spinnerCard1.setSelection(4); // Seleciona "65 questões" por padrão (índice 4)
-        }
-
         View card2 = findViewById(R.id.cardSimulado2);
-        Spinner spinnerCard2 = null;
-        if (card2 != null) spinnerCard2 = card2.findViewById(R.id.spinnerCount);
-        if (spinnerCard2 != null) {
-            spinnerCard2.setAdapter(adapter);
-            spinnerCard2.setSelection(4); // Seleciona "65 questões" por padrão
-        }
-
         View card3 = findViewById(R.id.cardSimulado3);
-        Spinner spinnerCard3 = null;
-        if (card3 != null) spinnerCard3 = card3.findViewById(R.id.spinnerCount);
-        if (spinnerCard3 != null) {
-            spinnerCard3.setAdapter(adapter);
-            spinnerCard3.setSelection(4); // Seleciona "65 questões" por padrão
-        }
-
         View card4 = findViewById(R.id.cardSimulado4);
-        Spinner spinnerCard4 = null;
-        if (card4 != null) spinnerCard4 = card4.findViewById(R.id.spinnerCount);
-        if (spinnerCard4 != null) {
-            spinnerCard4.setAdapter(adapter);
-            spinnerCard4.setSelection(4);
-        }
-
         View card5 = findViewById(R.id.cardSimulado5);
-        Spinner spinnerCard5 = null;
-        if (card5 != null) spinnerCard5 = card5.findViewById(R.id.spinnerCount);
-        if (spinnerCard5 != null) {
-            spinnerCard5.setAdapter(adapter);
-            spinnerCard5.setSelection(4);
-        }
-
         View card6 = findViewById(R.id.cardSimulado6);
-        Spinner spinnerCard6 = null;
-        if (card6 != null) spinnerCard6 = card6.findViewById(R.id.spinnerCount);
-        if (spinnerCard6 != null) {
-            spinnerCard6.setAdapter(adapter);
-            spinnerCard6.setSelection(4);
-        }
-
         View card7 = findViewById(R.id.cardSimulado7);
-        Spinner spinnerCard7 = null;
-        if (card7 != null) spinnerCard7 = card7.findViewById(R.id.spinnerCount);
-        if (spinnerCard7 != null) {
-            spinnerCard7.setAdapter(adapter);
-            spinnerCard7.setSelection(4);
-        }
-
         View card8 = findViewById(R.id.cardSimulado8);
-        Spinner spinnerCard8 = null;
-        if (card8 != null) spinnerCard8 = card8.findViewById(R.id.spinnerCount);
-        if (spinnerCard8 != null) {
-            spinnerCard8.setAdapter(adapter);
-            spinnerCard8.setSelection(4);
-        }
-
         View card9 = findViewById(R.id.cardSimulado9);
-        Spinner spinnerCard9 = null;
-        if (card9 != null) spinnerCard9 = card9.findViewById(R.id.spinnerCount);
-        if (spinnerCard9 != null) {
-            spinnerCard9.setAdapter(adapter);
-            spinnerCard9.setSelection(4);
-        }
-
         View card10 = findViewById(R.id.cardSimulado10);
-        Spinner spinnerCard10 = null;
-        if (card10 != null) spinnerCard10 = card10.findViewById(R.id.spinnerCount);
-        if (spinnerCard10 != null) {
-            spinnerCard10.setAdapter(adapter);
-            spinnerCard10.setSelection(4);
-        }
 
-        // Buttons on each simulado card
         View btnStartSim1 = card1 != null ? card1.findViewById(R.id.btnStartSim) : null;
         View btnStartSim2 = card2 != null ? card2.findViewById(R.id.btnStartSim) : null;
         View btnStartSim3 = card3 != null ? card3.findViewById(R.id.btnStartSim) : null;
@@ -326,151 +226,81 @@ public class MainActivity extends AppCompatActivity {
         View btnStartSim10 = card10 != null ? card10.findViewById(R.id.btnStartSim) : null;
 
         if (btnStartSim1 != null) {
-            Spinner finalSpinnerCard1 = spinnerCard1;
             btnStartSim1.setOnClickListener(v -> {
-                int count = 65; // default
-                if (finalSpinnerCard1 != null) {
-                    String selected = (String) finalSpinnerCard1.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_1.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim2 != null) {
-            Spinner finalSpinnerCard2 = spinnerCard2;
             btnStartSim2.setOnClickListener(v -> {
-                int count = 65; // default
-                if (finalSpinnerCard2 != null) {
-                    String selected = (String) finalSpinnerCard2.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_2.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim3 != null) {
-            Spinner finalSpinnerCard3 = spinnerCard3;
             btnStartSim3.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard3 != null) {
-                    String selected = (String) finalSpinnerCard3.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_3.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim4 != null) {
-            Spinner finalSpinnerCard4 = spinnerCard4;
             btnStartSim4.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard4 != null) {
-                    String selected = (String) finalSpinnerCard4.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_4.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim5 != null) {
-            Spinner finalSpinnerCard5 = spinnerCard5;
             btnStartSim5.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard5 != null) {
-                    String selected = (String) finalSpinnerCard5.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_5.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim6 != null) {
-            Spinner finalSpinnerCard6 = spinnerCard6;
             btnStartSim6.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard6 != null) {
-                    String selected = (String) finalSpinnerCard6.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_6.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim7 != null) {
-            Spinner finalSpinnerCard7 = spinnerCard7;
             btnStartSim7.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard7 != null) {
-                    String selected = (String) finalSpinnerCard7.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_7.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim8 != null) {
-            Spinner finalSpinnerCard8 = spinnerCard8;
             btnStartSim8.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard8 != null) {
-                    String selected = (String) finalSpinnerCard8.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_8.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim9 != null) {
-            Spinner finalSpinnerCard9 = spinnerCard9;
             btnStartSim9.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard9 != null) {
-                    String selected = (String) finalSpinnerCard9.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_9.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
 
         if (btnStartSim10 != null) {
-            Spinner finalSpinnerCard10 = spinnerCard10;
             btnStartSim10.setOnClickListener(v -> {
-                int count = 65;
-                if (finalSpinnerCard10 != null) {
-                    String selected = (String) finalSpinnerCard10.getSelectedItem();
-                    count = Integer.parseInt(selected.split(" ")[0]);
-                }
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
                 intent.putExtra("SIMULADO_ASSET", "simulado_10.json");
-                intent.putExtra("QUESTION_COUNT", count);
                 startActivity(intent);
             });
         }
